@@ -1,0 +1,16 @@
+{
+  "name": "cypress-axedt",
+  "version": "1.0.0",
+  "description": "axe DevTools example with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "jonathan.thickens@deque.com",
+  "license": "ISC",
+  "dependencies": {
+    "@axe-devtools/cypress": "4.4.0",
+    "@axe-devtools/reporter": "4.4.0",
+    "cypress": "^6.1.0"
+  }
+}
