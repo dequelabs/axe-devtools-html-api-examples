@@ -1,0 +1,32 @@
+{
+  "name": "axe-devtools-jest-typescript",
+  "version": "4.4.0",
+  "description": "axe DevTools example with React/Jest/Typescript",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "rimraf ./a11y-results && jest"
+  },
+  "dependencies": {
+    "@axe-devtools/jest": "4.2.0",
+    "@axe-devtools/reporter": "4.4.0",
+    "@testing-library/jest-dom": "^4.2.3",
+    "@testing-library/react": "^12.1.2",
+    "@types/enzyme": "^3.10.10",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^24.0.22",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
+    "babel-polyfill": "^6.26.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-15": "^1.4.3",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest": "^24.9.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  }
+}

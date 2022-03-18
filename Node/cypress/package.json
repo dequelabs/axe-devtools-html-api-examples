@@ -1,13 +1,13 @@
 {
-  "name": "cypress-axedt",
-  "version": "1.0.0",
+  "name": "axe-devtools-cypress",
+  "version": "4.4.0",
   "description": "axe DevTools example with Cypress",
   "main": "index.js",
+  "author": "jonathan.thickens@deque.com",
+  "license": "ISC",
   "scripts": {
     "test": "cypress open"
   },
-  "author": "jonathan.thickens@deque.com",
-  "license": "ISC",
   "dependencies": {
     "@axe-devtools/cypress": "4.4.0",
     "@axe-devtools/reporter": "4.4.0",
