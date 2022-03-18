@@ -17,7 +17,7 @@ describe("The Bad Template", () => {
 
   beforeAll(async()=>{
      document.body.appendChild(divWrapper);
-    axe: AxeResults = configureAxeDt();
+     axe = configureAxeDt();
      axeReporter = new AxeDevtoolsReporter("A11y", "./a11y-results");
   });
 
@@ -27,15 +27,6 @@ describe("The Bad Template", () => {
     await axeReporter.buildJUnitXML("./a11y-results/xml");
     document.body.removeChild(divWrapper);
   });
-
-  // test("should check for zero accessibility violations", async () => {
-  //   shallow(<BadTemplate></BadTemplate>, { attachTo: document.body});
-  //   console.log(divWrapper)
-  //   const results = await axe(divWrapper);
-  //   console.log("Total violations", results.violations.length);
-  //   axeReporter.logTestResult("Bad-template", results);
-  //   expect(results).toHaveZeroViolations();
-  // });
 
   test("should check for zero accessibility violations w/ config", async () => {
     const {container} = render(<BadTemplate/>);
