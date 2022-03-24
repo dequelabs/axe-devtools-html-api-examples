@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "id": "test",
+      "options": [
+        "test"
+      ],
+      "evaluate": "function() { return false; }"
+    }
+  ],
+  "rules": [
+    {
+      "id": "test",
+      "metadata": {
+        "description": "Will always fail",
+        "help": "There is no way to make this pass! It is for testing",
+        "helpUrl": "https://foo.com/bar"
+      },
+      "selector": "html",
+      "any": [],
+      "all": ["test"],
+      "none": [],
+      "tags": [
+        "wcag2aa"
+      ]
+    }
+  ]
+}
