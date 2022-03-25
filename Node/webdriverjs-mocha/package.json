@@ -1,0 +1,21 @@
+{
+  "name": "axe-devtools-webdriverjs-mocha",
+  "version": "4.4.0",
+  "author": {
+    "name": "Jonathan Thickens",
+    "organization": "Deque Systems",
+    "url": "http://deque.com"
+  },
+  "dependencies": {
+    "@axe-devtools/reporter": "^4.4.0",
+    "@axe-devtools/webdriverjs": "^4.4.0",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^8.2.1",
+    "rimraf": "^3.0.2",
+    "selenium-webdriver": "^4.0.0-alpha.8"
+  },
+  "scripts": {
+    "test": "rimraf ./a11y-results && mocha _tests_ --colors --timeout 60000"
+  }
+}
