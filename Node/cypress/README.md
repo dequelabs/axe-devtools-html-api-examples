@@ -5,8 +5,10 @@
   * NodeJS (6.10 or higher)
   * Cypress - installed globally
 
-## Integration information
+## Installation information
 In order to use this sample project, you will need to install axe DevTools Cypress and the DevTools Reporter as dependencies via NPM or Yarn. These dependencies are included in `package.json`, but access to Deque's private registry is required to install them. To do so, follow [this guide](https://axe-devtools-html-docs.deque.com/reference/node/cypress/install-agora-cypress.html) on the Deque documentation site.
+
+Once access to Deque's private registry has been configured, dependencies for this project can be installed as normal through npm or yarn.
 
 ## Running the test cases
 `npm test` runs the following command:

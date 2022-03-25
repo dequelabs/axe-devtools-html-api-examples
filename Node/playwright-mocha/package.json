@@ -1,0 +1,22 @@
+{
+  "name": "axe-devtools-playwright-mocha",
+  "version": "4.4.0",
+  "author": {
+    "name": "Jonathan Thickens",
+    "organization": "Deque Systems",
+    "url": "http://deque.com"
+  },
+  "dependencies": {
+    "@axe-devtools/playwright": "^4.4.0",
+    "@axe-devtools/reporter": "^4.4.0",
+    "axe-core": "^4.4.1",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^8.2.1",
+    "playwright": "1.19.2",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "test": "rimraf ./a11y-results && mocha ./_tests_/site-flow-a11y.js --timeout 60000 --exit"
+  }
+}
