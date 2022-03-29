@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+	<test name="ApplicationAccessibilityTest">
+         <groups>
+             <run>
+                 <include name="a11yTest"/>
+                 <include name="a11yCustom"/>
+             </run>
+         </groups>
+    <classes>
+        <class name="com.deque.ApplicationFullTest"/>
+        <class name="com.deque.AxeDTCustomConfigTest"/>
+    </classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->
