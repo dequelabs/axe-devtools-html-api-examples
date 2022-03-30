@@ -6,11 +6,13 @@ import com.deque.html.axedevtools.selenium.reporter.AxeReportingOptions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.File;
+import java.io.IOException;
 
 import static com.deque.html.axedevtools.matchers.IsAccessible.isAxeClean;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -21,7 +23,12 @@ public class AxeDTCustomConfigTest {
 
   private WebDriver webDriver;
   private AxeReportingOptions _reportOptions = new AxeReportingOptions();
-  static String macReporter = new File("src/test/resources/axe-macos").getAbsolutePath();
+  // Please uncomment based on your OS
+  static String reporterMac = new File("src/test/resources/reporter-cli-macos ").getAbsolutePath();
+  //  static String reporterLinux = new
+  // File("src/test/resources/reporter-cli-win.exe").getAbsolutePath();
+  //  static String reporterWin = new
+  // File("src/test/resources/reporter-cli-linux").getAbsolutePath();
 
   @BeforeTest
   public void setUp() throws Exception {
@@ -29,7 +36,7 @@ public class AxeDTCustomConfigTest {
         .forAuditSuite(getClass().getResource("resources/config/attest.json"))
         .withAxeScript(getClass().getResource("/axe.js"))
         .testSuiteName("Homepage")
-        .outputDirectory("target/axe-results-config-test");
+        .outputDirectory("target/axe-results");
 
     ChromeOptions options = new ChromeOptions();
     options.addArguments("headless");
@@ -43,6 +50,14 @@ public class AxeDTCustomConfigTest {
   @AfterTest
   public void tearDown() {
     webDriver.quit();
+  }
+
+  @AfterClass
+  public static void generateHtmlReport() throws IOException {
+    Runtime rt = Runtime.getRuntime();
+    String jsonResultsPath = new File("target/axe-results").getAbsolutePath();
+    String command = reporterMac + " " + jsonResultsPath + " target/a11y-html-report --format html";
+    rt.exec(command);
   }
 
   @Test(groups = {"a11yTest"})
