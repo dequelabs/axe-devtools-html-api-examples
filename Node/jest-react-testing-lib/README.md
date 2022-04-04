@@ -12,7 +12,7 @@
 ## Installation information
 In order to use this sample project, you will need to clone the repository from GitHub. Once you've done that, in your terminal, navigate from the project root back to this example.
 ```
-cd node/jest-enzyme
+cd node/jest-react-testing-lib
 ``` 
 
 Next, you'll need to install the dependencies for this project including axe DevTools Browser and the DevTools Reporter. They are already listed in `package.json`, but access to Deque's private registry is required to install them. To do so, follow [this guide](https://axe-devtools-html-docs.deque.com/reference/node/browser/install-agora.html) on the Deque documentation site. Once your access to Deque's private registry has been configured, dependencies for this project can be installed as normal through yarn or npm.
