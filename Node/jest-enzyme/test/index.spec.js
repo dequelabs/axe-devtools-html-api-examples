@@ -21,7 +21,9 @@ describe('@axe-devtools/browser, jest, enzyme', () => {
   });
 
   afterEach(() => {
-    reporter.buildHTML('./a11y-results-html');
+    reporter.buildHTML('./a11y-results');
+    reporter.buildCSV('./a11y-results');
+    reporter.buildJUnitXML('./a11y-results');
     component?.unmount();
   });
 

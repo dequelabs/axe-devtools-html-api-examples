@@ -2,7 +2,7 @@
   "name": "jest-enzyme",
   "description": "Example project using `@axe-devtools/reporter`, `@axe-devtools/browser`, jest, and enzyme.",
   "scripts": {
-    "test": "jest"
+    "test": "rimraf ./a11y-results && jest"
   },
   "devDependencies": {
     "@axe-devtools/browser": "^4.4.0",
