@@ -6,4 +6,4 @@ This project is a work in progress. If what you're looking for isn't here, [cont
 
 These examples are broken down by coding language, then by testing framework and browser automation technology. 
 
-An important note: these projects will not work as-installed. Axe DevTools HTML APIs require a license to access and use. For more information, check out [our website](deque.com).
+An important note: these projects will not work as-installed. Axe DevTools HTML APIs require a license to access and use. For more information, check out [our website](https://deque.com).
