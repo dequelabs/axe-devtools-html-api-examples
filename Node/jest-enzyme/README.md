@@ -1,4 +1,4 @@
-# axe DevTools Playwright Sample Project
+# axe DevTools Jest & Enzyme Sample Project
 
 <p align="center">  
   <img src="https://www.deque.com/wp-content/uploads/2020/04/axe-devtools.svg" height="70px" width="100px" alt="" />
@@ -7,7 +7,6 @@
 ## Prerequisites
   * npm
   * NodeJS (6.10 or higher)
-  * jest (installed globally)
 
 ## Installation information
 In order to use this sample project, you will need to clone the repository from GitHub. Once you've done that, in your terminal, navigate from the project root back to this example.
