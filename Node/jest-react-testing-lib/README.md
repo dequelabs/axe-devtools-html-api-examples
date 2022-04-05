@@ -35,7 +35,8 @@ Once the sample project has been run, formatted results can be found in the `a11
 Behind the scenes, `npm test` runs this command defined in `package.json`
 ```json
   "scripts": {
-    "test": "rimraf ./a11y-results && jest",
+    "pretest": "rimraf ./a11y-results",
+    "test": "jest"
   },
 ```
 The `rimraf` command will clear any saved results, so if you want to store previous runs you should remove this part of the run command. If you modify this project and want to publish your results in a different folder other than `./ally-results` then you should update the `dir` here as well. 
