@@ -9,15 +9,13 @@ const googleReporter = new AxeDevToolsReporter("google.com site", reportDir);
 describe("reporting on google page", () => {
   beforeEach(async () => {
     client = await webdriverio.remote({
-      port: 4444,
-      path: "/wd/hub",
-      services: ["chromedriver", "selenium-standalone"],
+      services: ["chromedriver"],
       capabilities: {
         browserName: "chrome"
       },
-      logLevel: "error"
+      logLevel: "info"
     });
-    await client.url("https://google.com");
+    await client.url("https://broken-workshop.dequelabs.com/");
   });
 
   afterEach(async () => {

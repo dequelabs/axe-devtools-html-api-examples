@@ -18,15 +18,13 @@ const axeReporter = new AxeDevToolsReporter("google", reportDir);
 describe("axeDT simple google page", () => {
   beforeEach(async () => {
     client = await webdriverio.remote({
-      port: 4444,
-      path: "/wd/hub",
       services: ["chromedriver"],
       capabilities: {
         browserName: "chrome"
       },
-      logLevel: "error"
+      logLevel: "info"
     });
-    await client.url("https://www.google.com");
+    await client.url("https://broken-workshop.dequelabs.com/");
   });
 
   afterEach(async () => {

@@ -6,15 +6,13 @@ let client;
 describe("simple amazon page", () => {
   beforeEach(async () => {
     client = await webdriverio.remote({
-      port: 4444,
-      path: "/wd/hub",
-      services: ["chromedriver", "selenium-standalone"],
+      services: ["chromedriver"],
       capabilities: {
         browserName: "chrome"
       },
-      logLevel: "error"
+      logLevel: "info"
     });
-    await client.url("https://amazon.com");
+    await client.url("https://broken-workshop.dequelabs.com/");
   });
 
   afterEach(async () => {
