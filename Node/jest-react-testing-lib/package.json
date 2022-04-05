@@ -2,7 +2,8 @@
   "name": "jest-rtl",
   "description": "Example project using `@axe-devtools/reporter`, `@axe-devtools/browser`, jest, and rtl.",
   "scripts": {
-    "test": "rimraf ./a11y-results && jest"
+    "pretest": "rimraf ./a11y-results",
+    "test": "jest"
   },
   "devDependencies": {
     "@axe-devtools/browser": "^4.4.0",
