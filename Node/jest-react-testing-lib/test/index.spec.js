@@ -16,7 +16,9 @@ describe('@axe-devtools/browser, jest, @testing-library/react', () => {
   });
 
   afterEach(() => {
-    reporter.buildHTML('./a11y-results-html');
+    reporter.buildHTML('./a11y-results');
+    reporter.buildCSV('./a11y-results');
+    reporter.buildJUnitXML('./a11y-results');
     cleanup();
   });
 
