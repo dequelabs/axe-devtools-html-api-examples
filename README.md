@@ -13,19 +13,19 @@ The examples are categorized as follows:
 
 The supported languages are as follows:
 
-### C#/.NET
+**C#/.NET**
 
 - MS Test
 - NUnit
 
-### JAVA
+**Java**
 
 - J-unit (Maven/Gradle)
 - testNG (Maven/Gradle)
 - Cucumber (Pico)
 - Cucumber (Spring)
 
-### JavaScript/Node
+**JavaScript/Node**
 
 - Angular
     - Protractor
@@ -49,12 +49,12 @@ The supported languages are as follows:
     - WebDriverIO/Sync
     - WebDriverJS
 
-### Python
+**Python**
 
 - Unittest
 - Robot
 
-### Language Independent
+**Language Independent**
 
 CLI
 
