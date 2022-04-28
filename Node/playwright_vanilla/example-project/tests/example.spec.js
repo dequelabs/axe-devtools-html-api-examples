@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const AxeDevtoolsBuilder = require('@axe-devtools/playwright').default;
 const AxeDevtoolsReporter = require("@axe-devtools/reporter").default;
 const { v4: uuidv4 } = require('uuid');
-const reporter = new AxeDevtoolsReporter('playwright', './a11y_reports/a11y_results/json' + uuidv4());
+const reporter = new AxeDevtoolsReporter('playwright', './a11y_reports/a11y_results/json/' + uuidv4());
 
 
 test.afterAll(async ({ context }) => {
