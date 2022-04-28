@@ -42,7 +42,7 @@ npm install
 
 You can configure multiple browsers as you would like in the **`playwright.config.js`**
 
-```json
+```js
   projects: [
     {
       name: 'chromium',
@@ -94,8 +94,13 @@ npx playwright test <tests/file-name> <--headed>
 
 ## Test Results
 
-The **_a11y-results_** directory contains formatted results in raw JSON, html, csv, and xml.
+The test file generates results in the **_a11y-results_** directory in the following formats:
+- csv
+- html
+- json
+- xml
 
+>Note: Check each subdirectory for the respective format.
 
 ## Related Information
 
