@@ -2,13 +2,13 @@
 
 # axe DevTools
 
-[axe DevTools](https://www.deque.com/axe/devtools/) is the most powerful and accurate accessibility toolkit on the market can get you to 80% issue coverage—or more—during development. Axe DevTools will save you money, time, and effort.
+[axe DevTools](https://www.deque.com/axe/devtools/) is the most powerful and accurate accessibility toolkit on the market that can get you to 80% issue coverage—or more—during development. Axe DevTools will save you money, time, and effort.
 
 Using axe DevTools Playwright webdriver binding you can integrate axe DevTools into your existing testing environment instead of building your testing environment around axe DevTools.
 
 # axe DevTools Playwright API Example
 
-This is an example project that demonstrates how axe DevTools Playwright webdriver binding detects the accessibility issues, and generate reports in JSON, html, xml, and csv formats.
+This is an example project that demonstrates how axe DevTools Playwright webdriver binding detects the accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
 - npm
@@ -32,7 +32,7 @@ Install the dependencies **axe DevTools Playwright** and **axe DevTools Reporter
 > **_NOTE:_**
 >You need a valid license to access and use our APIs and example projects. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-pl-install-agora) page. After configuring the access to Deque private registry, you can install the dependencies for this project.
 
-The following command installs all the required dependcies **`@axe-devtools/playwright`**, **`@axe-devtools/reporter`**, and **`uuid`** as mentioned in the **`package.json`** to run the example project.
+The following command installs all the required dependencies **`@axe-devtools/playwright`**, **`@axe-devtools/reporter`**, and **`uuid`** as mentioned in the **`package.json`** to run the example project.
 
 ```sh
 npm install
@@ -70,7 +70,7 @@ You can configure multiple browsers as you would like in the **`playwright.confi
 
 ## Run Test File
 
-The **_tests_** directory contains example test file **`example.spec.js`**. This test file shows 2 basic tests **`basic test_1`** and **`basic test_2`** that analyze the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
+The **_tests_** directory contains the example test file **`example.spec.js`**. This test file shows 2 basic tests **`basic test_1`** and **`basic test_2`** that analyze the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
 The following command runs the test on all the files in the **_tests_** directory with the browser preview.
 
@@ -94,13 +94,7 @@ npx playwright test <tests/file-name> <--headed>
 
 ## Test Results
 
-The test file generates results in the **_a11y-results_** directory in the following formats:
-- csv
-- html
-- json
-- xml
-
->Note: Check each subdirectory for the respective format.
+The test file generates results in the **_a11y-results_** directory. Check each subdirectory for the respective format.
 
 ## Related Information
 
