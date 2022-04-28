@@ -2,12 +2,13 @@ const { test, expect } = require('@playwright/test');
 const AxeDevtoolsBuilder = require('@axe-devtools/playwright').default;
 const AxeDevtoolsReporter = require("@axe-devtools/reporter").default;
 const { v4: uuidv4 } = require('uuid');
-const reporter = new AxeDevtoolsReporter('playwright', './a11y_reports/a11y_results' + uuidv4());
+const reporter = new AxeDevtoolsReporter('playwright', './a11y_reports/a11y_results/json' + uuidv4());
+
 
 test.afterAll(async ({ context }) => {
-    await reporter.buildHTML("./a11y_reports/a11y_results/html" + uuidv4() + "/");
-    await reporter.buildJUnitXML("./a11y_reports/a11y_results/xml" + uuidv4() + "/");
-    await reporter.buildCSV("./a11y_reports/a11y_results/csv" + uuidv4() + "/");
+    await reporter.buildHTML("./a11y_reports/a11y_results/html/results_" + uuidv4());
+    await reporter.buildJUnitXML("./a11y_reports/a11y_results/xml/results_" + uuidv4());
+    await reporter.buildCSV("./a11y_reports/a11y_results/csv/results_" + uuidv4());
     await page.close();
 });
 
