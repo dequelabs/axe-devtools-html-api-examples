@@ -4,11 +4,11 @@ The axe DevTools HTML API Examples Repo contains the working examples of Deque b
 
 The examples are categorized as follows:
 - coding language
-- testing framework and 
+- testing framework
 - browser automation technology
 
 > **_NOTES:_**
->- This project is currently in `Draft` state. If you do not find any relevant example (for Deque supported languages), contact [Deque HelpDesk](mailto:helpdesk@deque.com).
+>- This project is currently in a `Draft` state. If you do not find any relevant example (for Deque supported languages), contact [Deque HelpDesk](mailto:helpdesk@deque.com).
 >- You need a valid license to access and use our APIs and example projects. For more information, check out [our website](https://deque.com).
 
 The supported languages are as follows:
