@@ -1,47 +1,78 @@
-# axe DevTools Jest and React DOM Sample Project
+![logo](./docs/logo-reactdom.png)
 
-<p align="center">  
-  <img src="https://www.deque.com/wp-content/uploads/2020/04/axe-devtools.svg" height="70px" width="100px" alt="" />
-</p>
+# axe DevTools
+
+[axe DevTools](https://www.deque.com/axe/devtools/) is the most powerful and accurate accessibility toolkit that can get 80% issue coverage—or more—during development. Axe DevTools save money, time, and effort.
+
+Using axe DevTools Jest and React DOM webdriver binding, you can integrate axe DevTools into your existing testing environment instead of building your testing environment around axe DevTools.
+
+
+# axe DevTools Jest and React DOM API Example
+
+This example project demonstrates how axe DevTools Jest and React DOM detects the accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
-  * npm
-  * NodeJS (6.10 or higher)
+- npm
+- NodeJS (6.10 or higher)
 
-## Installation information
-In order to use this sample project, you will need to clone the repository from GitHub. Once you've done that, in your terminal, navigate from the project root back to this example.
-```
-cd node/jest-reactdom
-``` 
+## Clone Project
 
-Next, you'll need to install the dependencies for this project including axe DevTools Browser and the DevTools Reporter. They are already listed in `package.json`, but access to Deque's private registry is required to install them. To do so, follow [this guide](https://axe-devtools-html-docs.deque.com/reference/node/browser/install-agora.html) on the Deque documentation site. Once your access to Deque's private registry has been configured, dependencies for this project can be installed as normal through yarn or npm.
+Follow these steps to clone and navigate to the directory:
+1. Clone example project **`jest-reactdom`** from GitHub.
+2. Open the project folder in the code editor.
+3. Open the terminal, and then navigate from the project root to the example.
+
+```sh
+cd Node/jest-reactdom
 ```
+
+## Install Dependencies
+
+Install the dependencies **axe DevTools Browser** and **axe DevTools Reporter** for the project.
+
+> **_NOTE:_**
+>You need a valid license to access and use our APIs and example projects. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-br-install-agora) page. After configuring the access to Deque private registry, you can install the dependencies for this project.
+The following command installs all the required dependencies **`@axe-devtools/browser`** and **`@axe-devtools/reporter`** as mentioned in the **`package.json`** to run the example project.
+
+```sh
 npm install
 ```
 
-## Running the test cases
-Use this command to run the example
-```
+## Run Test File
+
+The **_tests_** directory contains the example test file **`index.spec.js`**. This test file shows how to set up the axe DevTools Browser and Reporter APIs, test for accessibility, and generate formatted results.
+
+The following command runs the test file in the **_tests_** directory.
+
+```sh
 npm test
 ```
 
-## Project Setup
-The sample test file is held within the `test` directory. This file contains an example of how to set up the axe DevTools Browser and Reporter APIs, test for accessibility, and generate formatted results. 
+## Test Results
 
-Once the sample project has been run, formatted results can be found in the `a11y-results` folder. The folder will contain the raw JSON results as well as the html, csv, and xml report formats. There will be one additional `html` file which is an executive summary report aggregating results from all scans into one page.
+The test file generates results in the **_a11y-results_** directory. Check each subdirectory for the respective format.
 
-## Modifying this project
-Behind the scenes, `npm test` runs this command defined in `package.json`
+The additional **`HTML`** file is an executive summary report aggregating results from all scans into one page.
+
+## Configure
+
+**`npm test`** runs the **`rimraf`** command mentioned in the **`package.json`**.
+
 ```json
   "scripts": {
     "pretest": "rimraf ./a11y-results",
     "test": "jest"
   },
 ```
-The `rimraf` command will clear any saved results, so if you want to store previous runs you should remove this part of the run command. If you modify this project and want to publish your results in a different folder other than `./ally-results` then you should update the `dir` here as well. 
 
-## Additional documentation
+Every time you run the **`npm test`**, the **`rimraf`** command clears all saved results from the **`a11y-results`** directory, so if you want to retain previous test results, you should remove **`rimraf`** from the **`scripts`** object. 
 
-  * Overview: https://axe-devtools-html-docs.deque.com/reference/node/browser/overview.html
-  * API: https://axe-devtools-html-docs.deque.com/reference/node/browser/ref-overview.html
-  * Rules: https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md
+If you want to modify this project and publish your results in a different folder other than **`./ally-results`**, you should update the directory as intended. 
+
+## Related Information
+
+- [axe DevTools Browser Javascript Overview](https://docs.deque.com/devtools-html/4.0.0/en/node-br-overview)
+- [Browser Javascript API Reference](https://docs.deque.com/devtools-html/4.0.0/en/node-br-ref-overview)
+- [axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
+
+ 
