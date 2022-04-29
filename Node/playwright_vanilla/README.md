@@ -2,13 +2,13 @@
 
 # axe DevTools
 
-[axe DevTools](https://www.deque.com/axe/devtools/) is the most powerful and accurate accessibility toolkit on the market that can get you to 80% issue coverage—or more—during development. Axe DevTools will save you money, time, and effort.
+[axe DevTools](https://www.deque.com/axe/devtools/) is the most powerful and accurate accessibility toolkit that can get 80% issue coverage—or more—during development. Axe DevTools save money, time, and effort.
 
-Using axe DevTools Playwright webdriver binding you can integrate axe DevTools into your existing testing environment instead of building your testing environment around axe DevTools.
+Using axe DevTools Playwright webdriver binding, you can integrate axe DevTools into your existing testing environment instead of building your testing environment around axe DevTools.
 
 # axe DevTools Playwright API Example
 
-This is an example project that demonstrates how axe DevTools Playwright webdriver binding detects the accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
+This example project demonstrates how axe DevTools Playwright webdriver binding detects the accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
 - npm
@@ -16,7 +16,7 @@ This is an example project that demonstrates how axe DevTools Playwright webdriv
 
 ## Clone Project
 
-Follow the steps below to clone and navigate to the directory:
+Follow these steps to clone and navigate to the directory:
 1. Clone example project **`playwright_vanilla`** from GitHub.
 2. Open the project folder in the code editor.
 3. Open the terminal, and then navigate from the project root to the example.
@@ -70,7 +70,7 @@ You can configure multiple browsers as you would like in the **`playwright.confi
 
 ## Run Test File
 
-The **_tests_** directory contains the example test file **`example.spec.js`**. This test file shows 2 basic tests **`basic test_1`** and **`basic test_2`** that analyze the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
+The **_tests_** directory contains the example test file **`example.spec.js`**. This test file shows two basic tests **`basic test_1`** and **`basic test_2`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
 The following command runs the test on all the files in the **_tests_** directory with the browser preview.
 
