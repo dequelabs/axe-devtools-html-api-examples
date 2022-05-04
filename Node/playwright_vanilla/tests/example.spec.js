@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const AxeDevtoolsBuilder = require('@axe-devtools/playwright').default;
 const AxeDevtoolsReporter = require("@axe-devtools/reporter").default;
-const reporter = new AxeDevtoolsReporter('pplaywright', './a11y-results/homepageFlows');
+const reporter = new AxeDevtoolsReporter('playwright', './a11y-results/homepageFlows');
 
 
 
