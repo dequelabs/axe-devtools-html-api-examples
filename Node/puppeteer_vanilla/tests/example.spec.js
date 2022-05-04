@@ -8,7 +8,7 @@ var assert = require('assert');
 (async () => {
     const browser = await puppeteer.launch({
         headless: false,
-        // Uncomment the below line if the test run is to be run on firefox
+        // Uncomment the below line if the test is to be run on firefox browser
         // product: 'firefox',
     });
     const page = await browser.newPage();
