@@ -22,7 +22,7 @@ Follow these steps to clone and navigate to the directory:
 3. Open the terminal, and then navigate from the project root to the example.
 
 ```sh
-cd Node/playwright_vanilla/example-project
+cd Node/playwright_vanilla
 ```
 
 ## Install Dependencies
@@ -32,7 +32,7 @@ Install the dependencies **axe DevTools Playwright** and **axe DevTools Reporter
 > **_NOTE:_**
 >You need a valid license to access and use our APIs and example projects. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-pl-install-agora) page. After configuring the access to Deque private registry, you can install the dependencies for this project.
 
-The following command installs all the required dependencies **`@axe-devtools/playwright`**, **`@axe-devtools/reporter`**, and **`uuid`** as mentioned in the **`package.json`** to run the example project.
+The following command installs all the required dependencies **`@axe-devtools/playwright`** and **`@axe-devtools/reporter`** as mentioned in the **`package.json`** to run the example project.
 
 ```sh
 npm install
@@ -72,22 +72,10 @@ You can configure multiple browsers as you would like in the **`playwright.confi
 
 The **_tests_** directory contains the example test file **`example.spec.js`**. This test file shows two basic tests **`basic test_1`** and **`basic test_2`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
-The following command runs the test on all the files in the **_tests_** directory with the browser preview.
+The following command runs the test files in the **_tests_** directory.
 
 ```sh
-npx playwright test --headed
-```
-
-The following command runs the test on all the files in the **_tests_** directory without (headless mode) the browser preview.
-
-```sh
-npx playwright test
-```
-
-The following command runs the mentioned test file with the browser preview.
-
-```sh
-npx playwright test <tests/file-name> <--headed>
+npm test
 ```
 
 >To learn more about commands, see [Playwright documentation](https://playwright.dev/docs/test-cli).
@@ -95,6 +83,24 @@ npx playwright test <tests/file-name> <--headed>
 ## Test Results
 
 The test file generates results in the **_a11y-results_** directory. Check each subdirectory for the respective format.
+
+The **`/html/executive-report.html`** file is an executive summary report aggregating results from all scans into one page.
+
+
+## Configure Test
+
+**`npm test`** runs the **`rimraf`** command mentioned in the **`package.json`**.
+
+```json
+  "scripts": {
+    "test": "rimraf ./a11y-results/ && npx playwright test --headed"
+  },
+```
+
+Every time you run the **`npm test`**, the **`rimraf`** command clears all saved results from the **`a11y-results`** directory, so if you want to retain previous test results, you should remove **`rimraf`** from the **`scripts`** object. 
+
+If you want to modify this project and publish your results in a different folder other than **`./ally-results`**, you should update the directory as intended. 
+
 
 ## Related Information
 
