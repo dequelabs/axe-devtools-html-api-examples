@@ -8,8 +8,8 @@
 /bazel-out
 
 # dependencies
-/example-project/node_modules
-/example-project/package-lock.json
+/node_modules
+/package-lock.json
 
 # profiling files
 chrome-profiler-events.json
@@ -23,6 +23,8 @@ speed-measure-plugin.json
 *.launch
 .settings/
 *.sublime-workspace
+/.vscode
+
 
 # IDE - VSCode
 .vscode/*
@@ -31,6 +33,8 @@ speed-measure-plugin.json
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+/.vscode
+
 
 # misc
 /.sass-cache
@@ -41,9 +45,9 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-/example-project/a11y_reports/*
-/example-project/playwright-report/*
+/a11y-results
+/playwright-report/
 
 # System Files
-.DS_Store
+/.DS_Store
 Thumbs.db
