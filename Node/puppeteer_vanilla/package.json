@@ -1,0 +1,18 @@
+{
+  "name": "pupeteer_vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rimraf ./a11y-results && node ./tests/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axe-devtools/puppeteer": "^4.4.1",
+    "@axe-devtools/reporter": "^4.4.0",
+    "puppeteer": "^13.7.0",
+    "rimraf": "^3.0.2"
+  }
+}
