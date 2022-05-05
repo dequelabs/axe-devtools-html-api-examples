@@ -1,15 +1,17 @@
 {
   "name": "webdriver.js_vanilla",
   "version": "1.0.0",
-  "description": "",
+  "description": "This example project can be extended and used by the end user. It is based on Webdriver.js/Selenium with Node.js. Simply use 'npm i' to install the dependencies and run the test using 'npm test'. The test code is written in example.spec.js inside the ./tests dir. Please go throught the readme.md present in the repository for more details.",
   "main": "index.js",
   "scripts": {
     "test": "rimraf ./a11y-results && node ./tests/example.spec.js "
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "webdriver.js_vanilla"
+  ],
+  "author": "Ankit Kathal",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@axe-devtools/reporter": "^4.4.0",
     "@axe-devtools/webdriverjs": "^4.4.1",
     "selenium-webdriver": "^4.1.2",

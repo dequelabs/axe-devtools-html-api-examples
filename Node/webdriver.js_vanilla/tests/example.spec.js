@@ -2,11 +2,6 @@ const AxeDevToolsWebdriverJS = require('@axe-devtools/webdriverjs');
 const WebDriver = require('selenium-webdriver');
 const { By } = require('selenium-webdriver');
 const Reporter = require('@axe-devtools/reporter').default;
-const async_hooks = require('async_hooks');
-// var driver = new WebDriver.Builder().forBrowser('chrome').build();
-
-
-
 
 async function exampleTest() {
     driver = await new WebDriver.Builder().forBrowser('chrome').build();
@@ -35,4 +30,6 @@ async function exampleTest() {
     await driver.quit();
 }
 
-exampleTest()
+exampleTest().then(() => {
+    console.log('test execution completed.')
+})
