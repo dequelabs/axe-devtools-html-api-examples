@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@axe-devtools/puppeteer": "^4.4.1",
     "@axe-devtools/reporter": "^4.4.0",
     "puppeteer": "^13.7.0",

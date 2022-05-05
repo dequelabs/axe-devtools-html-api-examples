@@ -12,9 +12,8 @@ var assert = require('assert');
     await page.goto("https://broken-workshop.dequelabs.com/");
     // Uncomment the below line if screenshot is required
     // await page.screenshot({
-    //     path: 'example_' + uuidv4() + '.png'
+    //     path: 'example_'  + '.png'
     // });
-    // "puppeteer": "^13.7.0",
     const results = await new AxeDevToolsPuppeteer(page).analyze();
     console.log(results);
     reporter.logTestResult('homepage-no-flow', results);
