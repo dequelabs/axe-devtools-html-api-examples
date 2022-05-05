@@ -1,7 +1,7 @@
 {
   "name": "pupeteer_vanilla",
   "version": "1.0.0",
-  "description": "This is the puppeteer-vanilla example project which ustilizes puppeteer without any unit testing framework to integrate with axe-devtools-api in order to find the a11y issues.Please read the readme.md for more details.",
+  "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/puppeteer`, and `puppeteer`. Go through the `README` to learn more.",
   "main": "index.js",
   "scripts": {
     "test": "rimraf ./a11y-results && node ./tests/example.spec.js"
