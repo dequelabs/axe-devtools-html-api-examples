@@ -1,7 +1,7 @@
 {
-  "name": "new-project",
+  "name": "playwright_vanilla example project",
   "version": "1.0.0",
-  "description": "This is the playwright_vanilla example project , which uses the Playwright test runner to integrate with axe-devtools-api to assist the end user in finding the a11y results. Please read the readme.md present in the repository for more details.",
+  "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/playwright`, and `@playwright/test`. Go through the `README` to learn more.",
   "main": "index.js",
   "scripts": {
     "test": "rimraf ./a11y-results/ && npx playwright test --headed"
