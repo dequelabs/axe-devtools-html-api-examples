@@ -1,4 +1,3 @@
-// const puppeteer = require('puppeteer');
 const puppeteer = require('puppeteer');
 const { AxeDevToolsPuppeteer } = require('@axe-devtools/puppeteer');
 const Reporter = require('@axe-devtools/reporter').default;
@@ -8,8 +7,6 @@ var assert = require('assert');
 (async () => {
     const browser = await puppeteer.launch({
         headless: false,
-        // Uncomment the below line if the test is to be run on firefox browser
-        // product: 'firefox',
     });
     const page = await browser.newPage();
     await page.goto("https://broken-workshop.dequelabs.com/");
@@ -17,6 +14,7 @@ var assert = require('assert');
     // await page.screenshot({
     //     path: 'example_' + uuidv4() + '.png'
     // });
+    // "puppeteer": "^13.7.0",
     const results = await new AxeDevToolsPuppeteer(page).analyze();
     console.log(results);
     reporter.logTestResult('homepage-no-flow', results);
