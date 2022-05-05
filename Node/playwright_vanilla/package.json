@@ -1,13 +1,15 @@
 {
   "name": "new-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the playwright_vanilla example project , which uses the Playwright test runner to integrate with axe-devtools-api to assist the end user in finding the a11y results. Please read the readme.md present in the repository for more details.",
   "main": "index.js",
   "scripts": {
     "test": "rimraf ./a11y-results/ && npx playwright test --headed"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "playwright_vanilla - axe-devtools-api"
+  ],
+  "author": "Ankit Kathal",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.21.1",
