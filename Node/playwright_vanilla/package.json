@@ -1,6 +1,6 @@
 {
   "name": "playwright_vanilla example project",
-  "version": "1.0.0",
+  "version": "4.4.0",
   "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/playwright`, and `@playwright/test`. See `README` to learn more.",
   "main": "index.js",
   "scripts": {

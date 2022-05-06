@@ -1,10 +1,8 @@
 ![logo](./docs/logo.png)
 
-Using axe DevTools Playwright webdriver binding, you can integrate axe DevTools into your existing testing environment instead of building your testing environment around axe DevTools.
-
 # axe DevTools Playwright API Example
 
-This example project demonstrates how axe DevTools Playwright webdriver binding detects the accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
+Using axe DevTools Playwright, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools Playwright is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
 - npm
@@ -13,9 +11,9 @@ This example project demonstrates how axe DevTools Playwright webdriver binding 
 ## Clone Project
 
 Follow these steps to clone and navigate to the directory:
-1. Clone example project **`playwright_vanilla`** from GitHub.
-2. Open the project folder in the code editor.
-3. Open the terminal, and then navigate from the project root to the example.
+1. Clone this repo from GitHub.
+2. Open the project in your favourite editor.
+3. Navigate from the root of the repo to this example with the following command:
 
 ```sh
 cd Node/playwright_vanilla
@@ -23,12 +21,12 @@ cd Node/playwright_vanilla
 
 ## Install Dependencies
 
-Install the dependencies **axe DevTools Playwright** and **axe DevTools Reporter** for the project.
+Install the dependencies including **axe DevTools Playwright** and **axe DevTools Reporter** for the project.
 
 > **_NOTE:_**
->You need a valid license to access and use our APIs and example projects. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-pl-install-agora) page. After configuring the access to Deque private registry, you can install the dependencies for this project.
+>You need a valid license to use our APIs. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-pl-install-agora) page. After configuring the access to Deque's private registry, you can install the dependencies for this project.
 
-The following command installs all the required dependencies **`@axe-devtools/playwright`** and **`@axe-devtools/reporter`** as mentioned in the **`package.json`** to run the example project.
+The following command installs all the required dependencies to run this example project.
 
 ```sh
 npm install
