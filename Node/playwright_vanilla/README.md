@@ -1,9 +1,5 @@
 ![logo](./docs/logo.png)
 
-# axe DevTools
-
-[axe DevTools](https://www.deque.com/axe/devtools/) is the most powerful and accurate accessibility toolkit that can get 80% issue coverage—or more—during development. Axe DevTools save money, time, and effort.
-
 Using axe DevTools Playwright webdriver binding, you can integrate axe DevTools into your existing testing environment instead of building your testing environment around axe DevTools.
 
 # axe DevTools Playwright API Example
@@ -68,7 +64,7 @@ You can configure multiple browsers as you would like in the **`playwright.confi
 
 >To learn more about test configuration, see [Playwright documentation](https://playwright.dev/docs/test-configuration).
 
-## Run Test File
+## Run Tests
 
 The **_tests_** directory contains the example test file **`example.spec.js`**. This test file shows two basic tests **`basic test_1`** and **`basic test_2`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
@@ -82,12 +78,12 @@ npm test
 
 ## Test Results
 
-The test file generates results in the **_a11y-results_** directory. Check each subdirectory for the respective format.
+The tests generate results in the **_a11y-results_** directory. Check each subdirectory for the respective format.
 
 The **`/html/executive-report.html`** file is an executive summary report aggregating results from all scans into one page.
 
 
-## Configure Test
+## Test Run Configuration
 
 **`npm test`** runs the **`rimraf`** command mentioned in the **`package.json`**.
 
@@ -99,10 +95,10 @@ The **`/html/executive-report.html`** file is an executive summary report aggreg
 
 Every time you run the **`npm test`**, the **`rimraf`** command clears all saved results from the **`a11y-results`** directory, so if you want to retain previous test results, you should remove **`rimraf`** from the **`scripts`** object. 
 
-If you want to modify this project and publish your results in a different folder other than **`./ally-results`**, you should update the directory as intended. 
+If you want to modify this project and publish your results in a different folder other than **`./ally-results`**, you should update the output directory in the test file and the **test** parameter. 
 
 
-## Related Information
+## Additional Information
 
 - [axe DevTools Playwright Overview](https://docs.deque.com/devtools-html/4.0.0/en/node-pl-overview)
 - [Playwright API Reference](https://docs.deque.com/devtools-html/4.0.0/en/node-pl-ref-overview)
