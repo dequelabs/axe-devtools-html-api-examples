@@ -12,16 +12,15 @@ test.afterAll(async ({ context }) => {
     await browser.close();
 });
 
-
-test.describe('two tests', () => {
-    test('basic test_1', async ({ page, browserName }) => {
+test.describe('Homepage Flow', () => {
+    test('Homepage is accessible, no modifications', async ({ page, browserName }) => {
         await page.goto("https://broken-workshop.dequelabs.com/");
         const results = await new AxeDevtoolsBuilder({ page }).analyze();
         reporter.logTestResult('homepage-no-flow_' + browserName, results);
         expect(results.violations).toHaveLength(0)
     });
 
-    test('basic test_2', async ({ page, browserName }) => {
+    test('Homepage is accessible, recipe card', async ({ page, browserName }) => {
         await page.goto("https://broken-workshop.dequelabs.com/");
         await page.locator('#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button').click();
         const results2 = await new AxeDevtoolsBuilder({ page }).analyze();
