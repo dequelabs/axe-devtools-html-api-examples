@@ -1,7 +1,7 @@
 {
   "name": "pupeteer_vanilla",
   "version": "1.0.0",
-  "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/puppeteer`, and `puppeteer`. Go through the `README` to learn more.",
+  "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/puppeteer`, and `puppeteer`. See `README` to learn more.",
   "main": "index.js",
   "scripts": {
     "test": "rimraf ./a11y-results && node ./tests/example.spec.js"
