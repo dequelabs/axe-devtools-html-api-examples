@@ -66,7 +66,7 @@ You can configure multiple browsers as you would like in the **`playwright.confi
 
 The **_tests_** directory contains the example test file **`example.spec.js`**. This test file shows **`Homepage Flow`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
-The following command runs the test files in the **_tests_** directory.
+The following command runs the test file in the **_tests_** directory.
 
 ```sh
 npm test
@@ -91,9 +91,9 @@ The **`/html/executive-report.html`** file is an executive summary report aggreg
   },
 ```
 
-Every time you run the **`npm test`**, the **`rimraf`** command clears all saved results from the **`a11y-results`** directory, so if you want to retain previous test results, you should remove **`rimraf`** from the **`scripts`** object. 
+Every time you run **`npm test`**, the **`rimraf`** command clears all saved results from the **`a11y-results`** directory, so if you want to retain previous test results, you should remove **`rimraf`** from the **`scripts`** object. 
 
-If you want to modify this project and publish your results in a different folder other than **`./ally-results`**, you should update the output directory in the test file and the **test** parameter. 
+If you want to modify this project and publish your results in a folder other than **`./ally-results`**, you should update the output directory in the test file and the **test** parameter. 
 
 
 ## Additional Information
