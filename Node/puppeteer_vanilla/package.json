@@ -1,6 +1,6 @@
 {
-  "name": "pupeteer_vanilla",
-  "version": "1.0.0",
+  "name": "pupeteer example project",
+  "version": "4.4.0",
   "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/puppeteer`, and `puppeteer`. See `README` to learn more.",
   "main": "index.js",
   "scripts": {
