@@ -15,7 +15,6 @@ var assert = require('assert');
     //     path: 'example_'  + '.png'
     // });
     const results = await new AxeDevToolsPuppeteer(page).analyze();
-    console.log(results);
     reporter.logTestResult('homepage-no-flow', results);
 
     // Navigating to a new page by clicking on a button and then analysing the new page.
