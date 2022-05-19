@@ -16,7 +16,7 @@ Follow these steps to clone and navigate to the directory:
 3. Navigate from the root of the repo to this example with the following command:
 
 ```sh
-cd Node/playwright_vanilla
+cd Node/playwright
 ```
 
 ## Install Dependencies
@@ -64,7 +64,7 @@ You can configure multiple browsers as you would like in the **`playwright.confi
 
 ## Run Tests
 
-The **_tests_** directory contains the example test file **`example.spec.js`**. This test file shows **`Homepage Flow`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
+The **_tests_** directory contains the example test file **`example.spec.js`** that analyzes `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
 The following command runs the test file in the **_tests_** directory.
 
