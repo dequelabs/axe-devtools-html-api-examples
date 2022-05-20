@@ -10,10 +10,6 @@ var assert = require('assert');
     });
     const page = await browser.newPage();
     await page.goto("https://broken-workshop.dequelabs.com/");
-    // Uncomment the below line if screenshot is required
-    // await page.screenshot({
-    //     path: 'example_'  + '.png'
-    // });
     const results = await new AxeDevToolsPuppeteer(page).analyze();
     reporter.logTestResult('homepage-no-flow', results);
 
