@@ -21,7 +21,7 @@ cd Node/puppeteer
 
 ## Install Dependencies
 
-Install the dependencies including **axe DevTools Puppeteer** and ** DevTools Reporter** for the project.
+Install the dependencies including **axe DevTools Puppeteer** and **DevTools Reporter** for the project.
 
 > **_NOTE:_**
 >You need a valid license to use our APIs. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-pu-install-agora) page. After configuring the access to Deque's private registry, you can install the dependencies for this project.
