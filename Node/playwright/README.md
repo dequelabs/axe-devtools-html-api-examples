@@ -21,7 +21,7 @@ cd Node/playwright
 
 ## Install Dependencies
 
-Install the dependencies including **axe DevTools Playwright** and **axe DevTools Reporter** for the project.
+Install the dependencies including **axe DevTools Playwright** and **DevTools Reporter** for the project.
 
 > **_NOTE:_**
 >You need a valid license to use our APIs. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-pl-install-agora) page. After configuring the access to Deque's private registry, you can install the dependencies for this project.
@@ -64,7 +64,7 @@ You can configure multiple browsers as you would like in the **`playwright.confi
 
 ## Run Tests
 
-The **_tests_** directory contains the example test file **`example.spec.js`** that analyzes `https://broken-workshop.dequelabs.com/` for accessibility issues.
+The **_tests_** directory contains the example test file **`example.spec.js`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
 The following command runs the test file in the **_tests_** directory.
 

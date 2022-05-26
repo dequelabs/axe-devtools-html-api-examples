@@ -7,7 +7,7 @@
     "test": "rimraf ./a11y-results/ && npx playwright test --headed"
   },
   "keywords": [
-    "playwright_vanilla - axe-devtools-api"
+    "playwright - axe-devtools-api"
   ],
   "author": "Ankit Kathal",
   "license": "ISC",
