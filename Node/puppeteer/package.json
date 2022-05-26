@@ -1,5 +1,5 @@
 {
-  "name": "pupeteer example project",
+  "name": "puppeteer example project",
   "version": "4.4.0",
   "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/puppeteer`, and `puppeteer`. See `README` to learn more.",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "rimraf ./a11y-results && node ./tests/example.spec.js"
   },
   "keywords": [
-    "puppeteer_vanilla - axe-devtools-api"
+    "puppeteer - axe-devtools-api"
   ],
   "author": "Ankit Kathal",
   "license": "ISC",
