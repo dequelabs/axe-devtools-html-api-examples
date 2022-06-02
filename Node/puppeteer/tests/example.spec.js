@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const { AxeDevToolsPuppeteer } = require('@axe-devtools/puppeteer');
 const Reporter = require('@axe-devtools/reporter').default;
 const reporter = new Reporter('Basic Test Suite', './a11y-results/json');
-var assert = require('assert');
+const assert = require('assert');
 
 (async () => {
     const browser = await puppeteer.launch({
