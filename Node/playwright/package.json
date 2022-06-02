@@ -1,0 +1,20 @@
+{
+  "name": "playwright example project",
+  "version": "4.4.0",
+  "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/playwright`, and `@playwright/test`. See `README` to learn more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "rimraf ./a11y-results/ && npx playwright test --headed"
+  },
+  "keywords": [
+    "playwright - axe-devtools-api"
+  ],
+  "author": "Ankit Kathal",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.21.1",
+    "@axe-devtools/playwright": "^4.4.1",
+    "@axe-devtools/reporter": "^4.4.0",
+    "rimraf": "^3.0.2"
+  }
+}
