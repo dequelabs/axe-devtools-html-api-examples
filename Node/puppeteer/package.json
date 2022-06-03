@@ -1,0 +1,20 @@
+{
+  "name": "puppeteer example project",
+  "version": "4.4.0",
+  "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/puppeteer`, and `puppeteer`. See `README` to learn more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "rimraf ./a11y-results && node ./tests/example.spec.js"
+  },
+  "keywords": [
+    "puppeteer - axe-devtools-api"
+  ],
+  "author": "Ankit Kathal",
+  "license": "ISC",
+  "devDependencies": {
+    "@axe-devtools/puppeteer": "^4.4.1",
+    "@axe-devtools/reporter": "^4.4.0",
+    "puppeteer": "^13.7.0",
+    "rimraf": "^3.0.2"
+  }
+}
