@@ -28,7 +28,6 @@ describe('HelloWorld.vue', () => {
       props: { msg }
     })
     const results = await axeDevtools.run(fixture);
-    console.log(results);
     reporter.logTestResult('vue-browser-component', results)
     expect(wrapper.text()).toMatch(msg)
     
