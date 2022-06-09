@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "rimraf ./a11y-results/ && jest"
   },
   "dependencies": {
     "register-service-worker": "^1.7.2",

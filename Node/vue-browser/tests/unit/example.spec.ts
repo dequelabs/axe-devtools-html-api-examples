@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import HelloWorld from '@/components/HelloWorld.vue'
 import axeDevtools from '@axe-devtools/browser';
 import Reporter from '@axe-devtools/reporter'
-import rimraf from 'rimraf'
+
 
 const fixture = document.createElement('div');
 document.body.appendChild(fixture);
@@ -11,7 +11,6 @@ describe('HelloWorld.vue', () => {
   let reporter;
   
   beforeEach(() => {
-    rimraf.sync('./a11y-results*')
     reporter = new Reporter('A11yResults', './a11y-results')
     })
 
