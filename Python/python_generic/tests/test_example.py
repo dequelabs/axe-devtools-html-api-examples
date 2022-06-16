@@ -33,7 +33,7 @@ class axe_analyze():
         root_path = self.get_relative_path()
         reporter = root_path+"/resources/reporter-cli-macos"
         jsonpath = root_path+"/axe-json-reports"
-        resultspath=root_path+"/a11y-html-results"
+        resultspath=root_path+"/a11y-results"
 
         if not (os.path.isdir(jsonpath)):
             os.mkdir(jsonpath)
