@@ -20,7 +20,7 @@ class axe_analyze():
         report_config = ReportConfiguration().test_suite_name("homepage-no-flow").ui_state("Pre click")
         # Initializing the axedriver
         axe = Axe(AxeDriver(driver), report_configuration=report_config)
-        # Scanning the page and storing in a results folder
+        # Scanning the page and storing in a results object
         results = axe.analyze()
 
         # Clicking on an element and then setting the new report config and scanning the popup page for a11y violations.
