@@ -1,17 +1,14 @@
 using NUnit.Framework;
 using Deque.AxeDevtools.Selenium;
-using ReportResults = Deque.AxeDevtools.Results.ReportResults;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
-using System;
-
 
 // C# Axe example using Selenium and NUnit to run tests
 
 namespace AxeTest {
     public class Example {
-        RemoteWebDriver driver;
+        IWebDriver driver;
         AxeSelenium axe;
 
         [SetUp]
