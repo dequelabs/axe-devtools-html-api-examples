@@ -4,6 +4,7 @@ from axe_devtools_selenium import AxeDriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
 from axe_devtools_api import Axe, ReportConfiguration
+from sys import platform
 
 
 class axe_analyze():
@@ -29,9 +30,14 @@ class axe_analyze():
         axe2 = Axe(AxeDriver(driver), report_configuration=report_config1)
         results2 = axe2.analyze()
 
-        # Getting the root path and accordingly setting the path to the reporter binary file, logger and the destination
+        # Getting the root path and accordingly setting the path to the reporter binary file as per the os platform, logger and the destination
         root_path = self.get_relative_path()
-        reporter = root_path+"/resources/reporter-cli-macos"
+        if platform == "linux" or platform == "linux2":
+            reporter = root_path+"/resources/reporter-cli-linux"
+        elif platform == "darwin":
+            reporter = root_path+"/resources/reporter-cli-macos"
+        elif platform == "win32":
+            reporter = root_path+"/resources/reporter-cli-win.exe"
         jsonpath = root_path+"/axe-json-reports"
         resultspath=root_path+"/a11y-results"
 
@@ -58,7 +64,6 @@ class axe_analyze():
         absolute_path_to_proj=os.getcwd()
         path=absolute_path_to_proj.split(" ")
         pathlist=path[0].split("/")
-        requiredlen=len(pathlist)-1
         requiredpath=""
         for string in pathlist:
             requiredpath=requiredpath+"/"+string
@@ -70,3 +75,4 @@ class axe_analyze():
 
 if __name__ == "__main__":
     axe_analyze()
+

@@ -45,6 +45,7 @@ testem.log
 /typings
 /axe-json-reports
 /a11y-html-results
+/resources
 
 # System Files
 .DS_Store
