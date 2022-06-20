@@ -1,9 +1,9 @@
 import os
-from pprint import pprint
 from selenium import webdriver
 from axe_devtools_selenium import AxeDriver
 from webdriver_manager.chrome import ChromeDriverManager
 from axe_devtools_api import Axe, ReportConfiguration
+from sys import platform
 import pytest
 
 
@@ -17,7 +17,6 @@ def get_relative_path(request):
         _requiredpath = _requiredpath+"/"+string
         if string == 'unittest':
             break
-    print(type(_requiredpath))
     return (_requiredpath)
 
 @pytest.fixture()
@@ -28,7 +27,12 @@ def init_driver(request, get_relative_path):
     root_path = get_relative_path
     jsonpath = (root_path)+"/axe-json-reports"
     request.cls.jsonpath=jsonpath
-    reporter = (root_path)+"/resources/reporter-cli-macos"
+    if platform == "linux" or platform == "linux2":
+        reporter = root_path+"/resources/reporter-cli-linux"
+    elif platform == "darwin":
+        reporter = root_path+"/resources/reporter-cli-macos"
+    elif platform == "win32":
+        reporter = root_path+"/resources/reporter-cli-win.exe"
     resultspath = root_path+"/a11y-results"
     if not (os.path.isdir(jsonpath)):
         os.mkdir(jsonpath)
