@@ -5,6 +5,7 @@ from axe_devtools_selenium import AxeDriver
 from axe_devtools_unittest import AxeAssertions
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from sys import platform
 
 
 class TestAxe(unittest.TestCase, AxeAssertions):
@@ -14,7 +15,12 @@ class TestAxe(unittest.TestCase, AxeAssertions):
         cls.axe = Axe(AxeDriver(cls.driver))
         cls.root_path = cls.get_relative_path()
         cls.jsonpath = (cls.root_path)+"/axe-json-reports"
-        cls.reporter = (cls.root_path)+"/resources/reporter-cli-macos"
+        if platform == "linux" or platform == "linux2":
+            cls.reporter = (cls.root_path)+"/resources/reporter-cli-linux"
+        elif platform == "darwin":
+            cls.reporter = (cls.root_path)+"/resources/reporter-cli-macos"
+        elif platform == "win32":
+            cls.reporter = (cls.root_path)+"/resources/reporter-cli-win.exe"
         cls.resultspath = cls.root_path+"/a11y-results"
         if not (os.path.isdir(cls.jsonpath)):
             os.mkdir(cls.jsonpath)
