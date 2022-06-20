@@ -51,11 +51,11 @@ python -m test_example
 
 The tests generate results in the **_a11y-results_** directory. Check each subdirectory for the respective format.
 
-The **`/html/executive-report.html`** file is an executive summary report aggregating results from all scans into one page.
+The **`executive-report.html`** file is an executive summary report aggregating results from all scans into one page.
 
-Every time you run **`python -m test_example`**, it replaces all previously saved results with the latest results in the **`a11y-results`** directory, so if you want to retain previous test results, you should rename or save in a different directory. 
+Every time you run **`python -m test_example`**, it replaces all previously saved results with the latest results in the **`a11y-results`** directory, so if you want to retain previous test results, you should rename or save them in a different directory. 
 
-If you want to modify this project and publish your results in a folder other than **`./ally-results`**, you should update the output directory in the test file. 
+If you want to modify this project and publish your results in a folder other than **`./ally-results`**, you should update the output directory in the **`test_example.py`** file. 
 
 ## Additional Information
 
