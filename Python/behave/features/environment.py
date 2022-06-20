@@ -1,5 +1,5 @@
 import shutil
-
+from sys import platform
 import behave_webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import os
@@ -23,7 +23,12 @@ def after_all(context):
         rootpath = rootpath+"/"+string
         if string == 'unittest':
             break
-    reporter = (rootpath)+"/resources/reporter-cli-macos"
+    if platform == "linux" or platform == "linux2":
+        reporter = rootpath+"/resources/reporter-cli-linux"
+    elif platform == "darwin":
+        reporter = rootpath+"/resources/reporter-cli-macos"
+    elif platform == "win32":
+        reporter = rootpath+"/resources/reporter-cli-win.exe"
     resultspath = rootpath+"/a11y-results"
     jsonpath = rootpath + "/axe-reports"
     if not (os.path.isdir(jsonpath)):
