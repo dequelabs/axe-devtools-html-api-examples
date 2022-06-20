@@ -49,7 +49,7 @@ python -m test_example
 
 ## Test Results
 
-The tests generate results in the **_a11y-results_** directory. Check each subdirectory for the respective format.
+The tests generate results in the **_a11y-results_** directory.
 
 The **`executive-report.html`** file is an executive summary report aggregating results from all scans into one page.
 
