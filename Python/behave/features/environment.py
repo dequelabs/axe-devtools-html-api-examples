@@ -8,6 +8,8 @@ def before_all(context):
     context.behave_driver = behave_webdriver.Chrome(ChromeDriverManager().install())
     # context.behave_driver.quit()
     rootpath=os.getcwd()
+    if not (os.path.isdir(rootpath+"/axe-reports/")):
+        os.mkdir(rootpath+"/axe-reports/")
     shutil.rmtree(rootpath+"/axe-reports/")
 
 

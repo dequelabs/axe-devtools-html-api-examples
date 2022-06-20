@@ -1,6 +1,6 @@
 Feature: testing google
 
-  Scenario: visit a11y homepage and check for accessibility issues
+  Scenario: Visit a11y homepage and check for accessibility issues
     When I visit a11y test website homepage
     Then the page should be audited for accessibility
 
