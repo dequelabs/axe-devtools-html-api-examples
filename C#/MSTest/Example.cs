@@ -27,6 +27,7 @@ namespace AxeTest {
         public void HompageNoFlow() {
             AxeSelenium axe = new AxeSelenium(driver);
             var results = axe.Analyze();
+            AxeReporting.CreateResultsOutput(results, "hompage-no-flow");
             Assert.AreEqual(0, results.Findings.Violations.Count);
         }
 
@@ -34,8 +35,9 @@ namespace AxeTest {
         public void AlteredHompage() {
             AxeSelenium axe = new AxeSelenium(driver);
             driver.FindElement(By.CssSelector("#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button")).Click();
-            var results2 = axe.Analyze();
-            Assert.AreEqual(0, results2.Findings.Violations.Count);
+            var alteredResults = axe.Analyze();
+            AxeReporting.CreateResultsOutput(alteredResults, "altered-hompage");
+            Assert.AreEqual(0, alteredResults.Findings.Violations.Count);
         }
     }
 }
