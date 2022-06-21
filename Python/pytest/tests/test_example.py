@@ -15,7 +15,7 @@ def get_relative_path(request):
     _requiredpath = ""
     for string in pathlist:
         _requiredpath = _requiredpath+"/"+string
-        if string == 'unittest':
+        if string == 'pytest':
             break
     return (_requiredpath)
 
