@@ -41,9 +41,12 @@ def init_driver(request, get_relative_path):
     command_html = str(reporter) +" "+jsonpath+" "+resultspath+" --format html"
     command_csv = str(reporter) +" "+jsonpath+" "+resultspath+" --format csv"
     command_xml = str(reporter) +" "+jsonpath+" "+resultspath+" --format xml"
-    os.system(command_html)
-    os.system(command_csv)
-    os.system(command_xml)
+    try:
+        os.system(command_html)
+        os.system(command_csv)
+        os.system(command_xml)
+    except:
+        return("reporter binary files is not present")
     driver.quit()
 
 class Test_axe():
