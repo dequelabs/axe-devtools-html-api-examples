@@ -26,14 +26,16 @@ namespace AxeTest {
         [Test]
         public void HompageNoFlow() {
             var results = axe.Analyze();
+            AxeReporting.CreateResultsOutput(results, "homepage-no-flow");
             Assert.That(results.Findings.Violations.Count, Is.EqualTo(0));
         }
 
         [Test]
         public void AlteredHompage() {
             driver.FindElement(By.CssSelector("#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button")).Click();
-            var results2 = axe.Analyze();
-            Assert.That(results2.Findings.Violations.Count, Is.EqualTo(0));
+            var alteredResults = axe.Analyze();
+            AxeReporting.CreateResultsOutput(alteredResults, "altered-homepage");
+            Assert.That(alteredResults.Findings.Violations.Count, Is.EqualTo(0));
         }
     }
 }

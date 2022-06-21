@@ -2,6 +2,7 @@
 # compiled output
 /bin
 /obj
+/reports
 
 # Only exists if Bazel was run
 /bazel-out
