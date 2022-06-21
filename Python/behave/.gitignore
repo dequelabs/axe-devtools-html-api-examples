@@ -47,7 +47,6 @@ testem.log
 /typings
 /a11y-results
 /axe-reports/
-/resources
 
 # System Files
 /.DS_Store
