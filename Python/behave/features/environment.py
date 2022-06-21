@@ -22,15 +22,12 @@ def after_all(context):
         rootpath = rootpath+"/"+string
         if string == 'behave':
             break
-    try:
-        if platform == "linux" or platform == "linux2":
-            reporter = rootpath+"/resources/reporter-cli-linux"
-        elif platform == "darwin":
-            reporter = rootpath+"/resources/reporter-cli-macos"
-        elif platform == "win32":
-            reporter = rootpath+"/resources/reporter-cli-win.exe"
-    except:
-        return ("The reporter binary is not present")
+    if platform == "linux" or platform == "linux2":
+        reporter = rootpath+"/resources/reporter-cli-linux"
+    elif platform == "darwin":
+        reporter = rootpath+"/resources/reporter-cli-macos"
+    elif platform == "win32":
+        reporter = rootpath+"/resources/reporter-cli-win.exe"
     resultspath = rootpath+"/a11y-results"
     jsonpath = rootpath + "/axe-reports"
     if not (os.path.isdir(jsonpath)):
@@ -38,10 +35,13 @@ def after_all(context):
     command_html = str(reporter) +" "+jsonpath+" "+resultspath+" --format html"
     command_csv = str(reporter) +" "+jsonpath+" "+resultspath+" --format csv"
     command_xml = str(reporter) +" "+jsonpath+" "+resultspath+" --format xml"
-    os.system(command_html)
-    os.system(command_csv)
-    os.system(command_xml)
-    context.behave_driver.quit()
+    try:
+        os.system(command_html)
+        os.system(command_csv)
+        os.system(command_xml)
+        context.behave_driver.quit()
+    except:
+        return"reporter binary file is not present"
 
 
 
