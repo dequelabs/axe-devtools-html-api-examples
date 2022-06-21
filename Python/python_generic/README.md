@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 The **_tests_** directory contains the example test file **`test_example.py`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
-```
+
 The following command runs the test file in the **_tests_** directory.
 
 ```sh
