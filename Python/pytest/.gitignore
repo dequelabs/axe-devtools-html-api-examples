@@ -47,7 +47,6 @@ testem.log
 /typings
 /a11y-results
 /axe-json-reports
-/resources/*
 /.pytest_cache
 
 # System Files
