@@ -6,7 +6,6 @@ import os
 
 def before_all(context):
     context.behave_driver = behave_webdriver.Chrome(ChromeDriverManager().install())
-    # context.behave_driver.quit()
     rootpath=os.getcwd()
     if not (os.path.isdir(rootpath+"/axe-reports/")):
         os.mkdir(rootpath+"/axe-reports/")
@@ -21,7 +20,7 @@ def after_all(context):
     rootpath = ""
     for string in pathlist:
         rootpath = rootpath+"/"+string
-        if string == 'unittest':
+        if string == 'behave':
             break
     if platform == "linux" or platform == "linux2":
         reporter = rootpath+"/resources/reporter-cli-linux"
