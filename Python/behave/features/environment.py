@@ -22,12 +22,15 @@ def after_all(context):
         rootpath = rootpath+"/"+string
         if string == 'behave':
             break
-    if platform == "linux" or platform == "linux2":
-        reporter = rootpath+"/resources/reporter-cli-linux"
-    elif platform == "darwin":
-        reporter = rootpath+"/resources/reporter-cli-macos"
-    elif platform == "win32":
-        reporter = rootpath+"/resources/reporter-cli-win.exe"
+    try:
+        if platform == "linux" or platform == "linux2":
+            reporter = rootpath+"/resources/reporter-cli-linux"
+        elif platform == "darwin":
+            reporter = rootpath+"/resources/reporter-cli-macos"
+        elif platform == "win32":
+            reporter = rootpath+"/resources/reporter-cli-win.exe"
+    except:
+        return ("The reporter binary is not present")
     resultspath = rootpath+"/a11y-results"
     jsonpath = rootpath + "/axe-reports"
     if not (os.path.isdir(jsonpath)):
