@@ -60,9 +60,12 @@ class TestAxe(unittest.TestCase, AxeAssertions):
         command_html = str(self.reporter) +" "+self.jsonpath+" "+self.resultspath+" --format html"
         command_csv = str(self.reporter) +" "+self.jsonpath+" "+self.resultspath+" --format csv"
         command_xml = str(self.reporter) +" "+self.jsonpath+" "+self.resultspath+" --format xml"
-        os.system(command_html)
-        os.system(command_csv)
-        os.system(command_xml)
+        try:
+            os.system(command_html)
+            os.system(command_csv)
+            os.system(command_xml)
+        except:
+            return "reporter binary file is not present"
 
 
 
