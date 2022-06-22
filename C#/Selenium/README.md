@@ -1,8 +1,11 @@
+![logo](./docs/logo-C-sharp.png)
+
 # axe DevTools C# Basic API Example
 
-An basic example project demonstrating how to use axe DevTools C#
+Using axe DevTools C#, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools C# is used to detect accessibility issues and generates reports in JSON format.
 
-## Prerequisites
+## [Prerequisites](https://docs.deque.com/devtools-html/4.0.0/en/cs-install-options#prerequisites)
+
 - dotnet
 - Selenium WebDriver for Chrome
 
@@ -17,25 +20,96 @@ Follow these steps to clone and navigate to the directory:
 cd C#/Selenium
 ```
 
-## Set Up Workspace
+## Test Configuration 
 
-To run this project, you have to first set up your artifactory credentials.
-
-To do this, just store your username within an environmental variable named `ARTIFACTORY_USERNAME`
-and your password within an environmental variable named `ARTIFACTORY_PASSWORD` 
-**OR** replace the variables inside the nuget.config file with your username and password.
+To run this example project, you have to configure your artifactory credentials.
 
 >**_NOTE:_**
->You need a valid license to use our APIs. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-pu-install-agora) page. After configuring the access to Deque's private registry, you can install the dependencies for this project.
+>You need a valid license to use our APIs. For more information, see [Deque’s Agora](https://agora.dequecloud.com/ui/packages#/home) page. After configuring the access to Deque's private registry, you can install the packages for this project.
 
-Finally, add the axe-devtools-selenium package with the following command
+Do one of the following methods based on your machine:
+
+#### Windows Users
+
+1. Open **`nuget.config`** file.
+2. Enter the details as follows in the <ArtifactoryWindows>:
+   - Email (value="%ARTIFACTORY_USERNAME%")
+   - API Key (value="%ARTIFACTORY_PASSWORD%")
+
+    ```sh
+        <ArtifactoryWindows>
+            <add key="Username" value="%ARTIFACTORY_USERNAME%" />
+            <add key="ClearTextPassword" value="%ARTIFACTORY_PASSWORD%" />
+        </ArtifactoryWindows>
+    ```
+3. Remove the following lines:
+
+    ```sh
+        <ArtifactoryUnix>
+            <add key="Username" value="%ARTIFACTORY_USERNAME%" />
+            <add key="ClearTextPassword" value="%ARTIFACTORY_PASSWORD%" />
+        </ArtifactoryUnix>
+    ```
+
+    ```sh
+        <add key="ArtifactoryUnix" value="https://agora.dequecloud.com/artifactory/api/nuget/devtools-nuget/" />
+    ```
+4. Save the file.
+
+#### Unix Users
+
+1. Open **`nuget.config`** file.
+2. Enter the details as follows in the <ArtifactoryUnix>:
+   - Email (value="%ARTIFACTORY_USERNAME%")
+   - API Key (value="%ARTIFACTORY_PASSWORD%")
+
+    ```sh
+        <ArtifactoryUnix>
+            <add key="Username" value="%ARTIFACTORY_USERNAME%" />
+            <add key="ClearTextPassword" value="%ARTIFACTORY_PASSWORD%" />
+        </ArtifactoryUnix>
+    ```
+3. Remove the following lines:
+
+    ```sh
+        <ArtifactoryWindows>
+            <add key="Username" value="%ARTIFACTORY_USERNAME%" />
+            <add key="ClearTextPassword" value="%ARTIFACTORY_PASSWORD%" />
+        </ArtifactoryWindows>
+    ```
+
+    ```sh
+        <add key="ArtifactoryWindows" value="https://agora.dequecloud.com/artifactory/api/nuget/devtools-nuget/" />
+    ```
+
+4. Save the file.
+
+## Install axe DevTools Selenium Package
+
+The following command installs **axe DevTools Selenium** package to run this example project.
 
 ```sh
 dotnet add package axe-devtools-selenium
 ```
 
-## Run Example
-Use the following command to run the example:
-```
+## Run Tests
+
+The example test file **`Example.cs`** analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
+
+The following command runs the test file:
+
+```sh
 dotnet run
 ```
+
+## Test Reports
+
+The tests generate results in the **_reports_** directory.
+
+Every time you run **`dotnet run`**, it replaces all previously saved reports with the latest reports in the **`reports`** directory, so if you want to retain previous test reports, you should rename or save them in a different directory. 
+
+## Additional Information
+
+- [axe DevTools C# Overview](https://docs.deque.com/devtools-html/4.0.0/en/cs-overview)
+- [C# API Reference](https://docs.deque.com/devtools-html/4.0.0/en/cs-api)
+- [axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
