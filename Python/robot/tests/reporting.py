@@ -21,10 +21,6 @@ class reporting:
 
     def create_reports(self):
         rootpath=self.get_relative_path()
-        if not (os.path.isdir(rootpath+"/axe-reports/")):
-            os.mkdir(rootpath+"/axe-reports/")
-        shutil.rmtree(rootpath+"/axe-reports/")
-
         if platform == "linux" or platform == "linux2":
             reporter = rootpath+"/resources/reporter-cli-linux"
         elif platform == "darwin":
@@ -44,6 +40,12 @@ class reporting:
             os.system(command_xml)
         except:
             return ("reporter binary is not present")
+
+    def clear_reports(self):
+        rootpath=self.get_relative_path()
+        if not (os.path.isdir(rootpath+"/axe-reports/")):
+            os.mkdir(rootpath+"/axe-reports/")
+        shutil.rmtree(rootpath+"/axe-reports/")
 
 if __name__ == "__main__":
     reporting()
