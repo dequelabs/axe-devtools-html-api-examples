@@ -6,7 +6,7 @@ Using axe DevTools Python pytest, you can integrate axe DevTools into your exist
 
 ## Prerequisites
 
-Python 3 (does not support python 2) along with the virtual environment (venv or pyenv)
+Python 3 (does not support Python 2) along with the virtual environment (venv or pyenv)
 
 ## Clone Project
 
@@ -21,7 +21,7 @@ cd Python/pytest
 
 ## Binary Reporter
 
-Download the respective [Binary reporter](https://docs.deque.com/devtools-html/4.0.0/en/downloads#binary-reporter) and place it in the **_resources_** directory.
+Download the respective [Binary reporter](https://docs.deque.com/devtools-html/4.0.0/en/downloads#binary-reporter) for your operating system and place it in the **_resources_** directory.
 
 ## Install Dependencies
 
@@ -40,7 +40,6 @@ pip install -r requirements.txt
 
 The **_tests_** directory contains the example test file **`test_example.py`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
-
 The following command runs the test file in the **_tests_** directory.
 
 ```sh
@@ -49,7 +48,7 @@ pytest
 
 ## Test Results
 
-The tests generate results in the **_a11y-results_** directory.
+The tests generate results in the **_a11y-results_** directory if you have placed the respective [Binary reporter](https://docs.deque.com/devtools-html/4.0.0/en/downloads#binary-reporter) for your operating system. Otherwise, they generate only JSON results.
 
 The **`executive-report.html`** file is an executive summary report aggregating results from all scans into one page.
 
