@@ -7,7 +7,7 @@ Feature: testing google
 
   Scenario: Visit a11y homepage and test the recipe card
     When I visit a11y test website homepage
-    And click on the Cook chocolate cake button
+    And click on the cook chocolate cake button
     Then the page should be audited for accessibility
 
 

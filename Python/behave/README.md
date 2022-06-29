@@ -6,7 +6,7 @@ Using axe DevTools Python Behave, you can integrate axe DevTools into your exist
 
 ## Prerequisites
 
-Python 3 (does not support Python 2) along with the virtual environment (venv or pyenv)
+Python 3 (does not support Python 2) along with the virtual environment (venv or pyenv).
 
 ## Clone Project
 
@@ -48,7 +48,7 @@ behave
 
 ## Test Results
 
-The tests generate results in the **_a11y-results_** directory if you have placed the respective [Binary reporter](https://docs.deque.com/devtools-html/4.0.0/en/downloads#binary-reporter) for your operating system. Otherwise, they generate only JSON results.
+The tests generate results in the **_a11y-results_** directory if you have installed the [Binary reporter](https://docs.deque.com/devtools-html/4.0.0/en/downloads#binary-reporter). Otherwise, they generate only JSON results.
 
 The **`executive-report.html`** file is an executive summary report aggregating results from all scans into one page.
 
