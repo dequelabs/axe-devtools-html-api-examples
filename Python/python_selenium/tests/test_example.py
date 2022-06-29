@@ -70,9 +70,8 @@ class axe_analyze():
         requiredpath=""
         for string in pathlist:
             requiredpath=requiredpath+"/"+string
-            if string=='python_generic':
+            if string=='python_selenium':
                 break
-        print(requiredpath)
         return requiredpath
 
 
