@@ -1,4 +1,4 @@
-Feature: testing google
+Feature: Testing the dequelabs workshop homepage for a11y issues
 
   Scenario: Visit a11y homepage and check for accessibility issues
     When I visit a11y test website homepage
