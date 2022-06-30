@@ -74,9 +74,16 @@ public class example_Test {
     @AfterClass
     public static void reporting() throws IOException {
         Runtime rt = Runtime.getRuntime();
-        rt.exec(command_html);
-        rt.exec(command_xml);
-        rt.exec(command_csv);
+        try {
+            rt.exec(command_html);
+            rt.exec(command_xml);
+            rt.exec(command_csv);
+        }
+        catch(Exception e){System.out.println(e);}
+        finally {
+            System.out.println("Execution completed");
+        }
+
     }
 }
 
