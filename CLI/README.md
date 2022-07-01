@@ -23,7 +23,7 @@ You can use CLI in two modes:
 - Spec Mode
 - URI Mode
 
-This example demonstrates spec mode. For URI mode, see our [axe DevTools HTML documentation](https://docs.deque.com/devtools-html/4.0.0/en/cli-quickstart-pages)
+This example demonstrates spec mode. For URI mode, see our [axe DevTools HTML documentation](https://docs.deque.com/devtools-html/4.0.0/en/cli-page-tests)
 
 ## Using Spec File
 
