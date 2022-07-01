@@ -9,7 +9,8 @@ import java.io.IOException;
 
 
 public class example_Test {
-    Playwright playwright;
+    static Playwright playwright = Playwright.create();
+    static Browser browser = null;
     public static Page page = null;
     public static AxePlaywrightBuilder axePlaywrightBuilder = null;
     static String reporter = new File(
@@ -24,19 +25,13 @@ public class example_Test {
 
     @BeforeClass
     public static void delete_json_dir() throws IOException {
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(50));
+        page = browser.newPage();
+        axePlaywrightBuilder = new AxePlaywrightBuilder(page);
         File file = new File(Logger);
         if (file.exists()){
             FileUtils.deleteDirectory(file);
         }
-    }
-
-
-    @Before
-    public void initiate_drivers(){
-        playwright = Playwright.create();
-        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(50));
-        page = browser.newPage();
-        axePlaywrightBuilder = new AxePlaywrightBuilder(page);
     }
 
     @Test
