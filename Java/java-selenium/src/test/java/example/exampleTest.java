@@ -49,7 +49,7 @@ public class exampleTest {
     public void test_recipe_card_a11y_workshop_homepage(){
         driver.get("https://broken-workshop.dequelabs.com/");
         driver.findElement(By.cssSelector("#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button")).click();
-        Results results1 = axeSelenium.logResults(_reportOptions.uiState("Recipe_card_scan")).run(axedriver);
+        Results results2 = axeSelenium.logResults(_reportOptions.uiState("Recipe_card_scan")).run(axedriver);
 
     }
 
