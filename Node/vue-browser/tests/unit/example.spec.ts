@@ -5,12 +5,12 @@ import Reporter from '@axe-devtools/reporter'
 
 
 const fixture = document.createElement('div');
-document.body.appendChild(fixture);
-// let reporter;
+
 describe('HelloWorld.vue', () => {
   let reporter;
   
   beforeEach(() => {
+    document.body.appendChild(fixture);
     reporter = new Reporter('A11yResults', './a11y-results')
     })
 
@@ -18,6 +18,7 @@ describe('HelloWorld.vue', () => {
     reporter.buildHTML('./a11y-results')
     reporter.buildCSV('./a11y-results')
     reporter.buildJUnitXML('./a11y-results')
+    document.body.removeChild(fixture);
     })
 
   it('renders props.msg when passed',async () => {

@@ -47,6 +47,7 @@ testem.log
 /typings
 /a11y-results
 /playwright-report/
+/registerServiceWorker.ts
 
 # System Files
 /.DS_Store
