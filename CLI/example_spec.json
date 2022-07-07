@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+      "name": "Homepage Flow",
+      "id": "deque.com",
+      "pageList": [
+        {
+          "name": "Homepage is accessible",
+          "url": "https://broken-workshop.dequelabs.com/",
+          "actions": [
+            "analyze"
+          ]
+        },
+        {
+          "name": "Homepage is accessible, recipe card",
+          "url": "https://broken-workshop.dequelabs.com/",
+          "actions": [
+            "click element \"div[id='main-content'] div:nth-child(1) div:nth-child(3) button:nth-child(1) span:nth-child(2)\"",
+            "wait for element \"div>button[type='submit']\" to be found",
+            "analyze"
+          ]
+        }
+      ]
+    }
+  ]
+}
