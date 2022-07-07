@@ -2,7 +2,7 @@
 
 # axe DevTools Vue Browser API Example
 
-Using axe DevTools Vue Browser, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools Vue Browser is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
+Using the axe DevTools browser package, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools browser is used with Vue to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
 - npm
@@ -64,6 +64,6 @@ If you want to modify this project and publish your results in a folder other th
 
 ## Additional Information
 
-[axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
-
- 
+- [Browser JavaScript Overview](https://docs.deque.com/devtools-html/4.0.0/en/node-br-overview)
+- [Browser JavaScript API Reference](https://docs.deque.com/devtools-html/4.0.0/en/node-br-ref-overview)
+- [axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
