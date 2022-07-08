@@ -49,6 +49,7 @@ testem.log
 /axe-json-reports
 /src/main/
 /target
+/*.iml
 
 # System Files
 /.DS_Store
