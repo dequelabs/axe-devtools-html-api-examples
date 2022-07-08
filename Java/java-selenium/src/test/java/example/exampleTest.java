@@ -64,7 +64,7 @@ public class exampleTest {
             rt.exec(command_csv);
             rt.exec(command_xml);
         }
-        catch(Exception e){System.out.println(e);}
+        catch(Exception e){e.printStackTrace();}
         driver.quit();
     }
 }
