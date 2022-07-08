@@ -2,6 +2,7 @@ package deque;
 
 import java.io.File;
 import java.io.IOException;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -17,18 +18,14 @@ import com.deque.html.axedevtools.selenium.reporter.*;
 import static com.deque.html.axedevtools.matchers.IsAuditedForAccessibility.isAuditedForAccessibility;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class exampleTest
-{
-    static String reporter = new File("src/test/resources/reporter-cli-macos").getAbsolutePath();
+public class exampleTest {
     public static AxeReportingOptions _reportOptions = new AxeReportingOptions();
     public static WebDriver driver = null;
     public static AxeDriver axedriver = null;
     public static AxeSelenium axeSelenium = null;
-    public static String Logger;
-    public static String Destination;
 
     @BeforeClass
-    public static void initiate_drivers(){
+    public static void initiate_drivers() {
         _reportOptions = new AxeReportingOptions();
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -37,9 +34,6 @@ public class exampleTest
         AxeConfiguration.configure()
                 .testSuiteName("Test")
                 .outputDirectory("axe-json-reports/");
-        Logger =  new File("axe-json-reports/").getAbsolutePath();
-        Destination =  new File("a11y-results/").getAbsolutePath();
-
     }
 
     @Test
@@ -49,24 +43,28 @@ public class exampleTest
     }
 
     @Test
-    public void test_recipe_card_a11y_workshop_homepage(){
+    public void test_recipe_card_a11y_workshop_homepage() {
         driver.get("https://broken-workshop.dequelabs.com/");
         driver.findElement(By.cssSelector("#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button")).click();
         assertThat(axedriver, isAuditedForAccessibility().logResults(_reportOptions.uiState("Recipe_card_scan")));
     }
 
     @AfterClass
-    public static void reporting()throws IOException{
+    public static void reporting() throws IOException {
         Runtime rt = Runtime.getRuntime();
-        String command_xml = reporter +" "+ Logger+" --destination "+Destination+" --format xml";
-        String command_html = reporter +" "+ Logger+" --destination "+Destination+" --format html";
-        String command_csv = reporter +" "+ Logger+" --destination "+Destination+" --format csv";
+        String reporter = new File("src/test/resources/reporter-cli-macos").getAbsolutePath();
+        String Logger = new File("axe-json-reports/").getAbsolutePath();
+        String Destination = new File("a11y-results/").getAbsolutePath();
+        String command_xml = reporter + " " + Logger + " --destination " + Destination + " --format xml";
+        String command_html = reporter + " " + Logger + " --destination " + Destination + " --format html";
+        String command_csv = reporter + " " + Logger + " --destination " + Destination + " --format csv";
         try {
             rt.exec(command_html);
             rt.exec(command_csv);
             rt.exec(command_xml);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        catch(Exception e){System.out.println(e);}
         driver.quit();
     }
 
