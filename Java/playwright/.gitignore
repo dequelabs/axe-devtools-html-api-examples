@@ -50,6 +50,7 @@ testem.log
 /src/main
 /axe-reports
 /target
+/playwright.iml
 
 # System Files
 /.DS_Store

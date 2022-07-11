@@ -1,4 +1,5 @@
 package org.example;
+import com.deque.html.maven.axedevtools.utils.reporter.AxeReportingOptions;
 import com.microsoft.playwright.*;
 import org.apache.commons.io.FileUtils;
 import org.junit.*;
@@ -10,22 +11,15 @@ import java.io.IOException;
 
 public class example_Test {
     static Playwright playwright = Playwright.create();
+    public static AxeReportingOptions _reportOptions = new AxeReportingOptions();
     static Browser browser = null;
-    public static Page page = null;
-    public static AxePlaywrightBuilder axePlaywrightBuilder = null;
-    static String reporter = new File(
-            "src/test/resources/reporter-cli-macos")
-            .getAbsolutePath();
+    static Page page = null;
+    static AxePlaywrightBuilder axePlaywrightBuilder = null;
     static String Logger = new File("axe-reports/").getAbsolutePath();
-
-    static String Destination = "a11y-results/";
-    static String command_html = reporter +" "+ Logger+" --destination "+Destination+" --format html";
-    static String command_csv = reporter +" "+ Logger+" --destination "+Destination+" --format csv";
-    static String command_xml = reporter +" "+ Logger+" --destination "+Destination+" --format xml";
 
     @BeforeClass
     public static void delete_json_dir() throws IOException {
-        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(50));
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
         page = browser.newPage();
         axePlaywrightBuilder = new AxePlaywrightBuilder(page);
         File file = new File(Logger);
@@ -37,46 +31,34 @@ public class example_Test {
     @Test
     public void test1(){
         page.navigate("https://broken-workshop.dequelabs.com/");
-        AxeResults axeResults = axePlaywrightBuilder.analyze();
+        AxeResults axeResults = axePlaywrightBuilder.logResults(_reportOptions.uiState("Homepage_scan")).analyze();
     }
 
     @Test
     public void test2(){
         page.navigate("https://broken-workshop.dequelabs.com/");
         page.locator("#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button").click();
-        AxeResults axeResults2 = axePlaywrightBuilder.analyze();
-    }
-
-    @After
-    public void rename_json_reports(){
-        File[] listOfFiles = new File("axe-reports/").listFiles();
-        int ctr=1;
-        for (int i = 0; i < listOfFiles.length; i++) {
-            if (listOfFiles[i].getName().contains("json")) {
-                System.out.println("File " + listOfFiles[i].getName());
-                File newname = new File ("axe-reports/axe-json-report"+ctr+".json");
-                ctr++;
-                listOfFiles[i].renameTo(newname);
-            }
-            if (listOfFiles[i].getName().contains("log")){
-                File newname = new File ("axe-reports/axe-run-log"+ctr+".log");
-                ctr++;
-                listOfFiles[i].renameTo(newname);
-            }
-        }
+        AxeResults axeResults2 = axePlaywrightBuilder.logResults(_reportOptions.uiState("Recipe_card_scan")).analyze();
     }
 
     @AfterClass
     public static void reporting() throws IOException {
         Runtime rt = Runtime.getRuntime();
+        String reporter = new File(
+                "src/test/resources/reporter-cli-macos")
+                .getAbsolutePath();
+        String Destination = "a11y-results/";
+        String command_html = reporter +" "+ Logger+" --destination "+Destination+" --format html";
+        String command_csv = reporter +" "+ Logger+" --destination "+Destination+" --format csv";
+        String command_xml = reporter +" "+ Logger+" --destination "+Destination+" --format xml";
         try {
             rt.exec(command_html);
             rt.exec(command_xml);
             rt.exec(command_csv);
         }
-        catch(Exception e){System.out.println(e);}
+        catch(Exception e){e.printStackTrace();}
         finally {
-            System.out.println("Execution completed");
+            browser.close();
         }
 
     }
