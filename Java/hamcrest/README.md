@@ -7,7 +7,6 @@ Using axe DevTools Java Hamcrest, you can integrate axe DevTools into your exist
 ## Prerequisites
 
 - Java 8 or higher
-- Selenium WebDriver
 
 ## Clone Project
 
