@@ -6,7 +6,7 @@
 
   <groupId>deque</groupId>
   <artifactId>java-selenium-axe-devtools</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>4.2.2</version>
   <repositories>
     <repository>
       <id>deque</id>
