@@ -6,7 +6,7 @@ Using axe DevTools Java Selenium, you can integrate axe DevTools into your exist
 
 ## Prerequisites
 
-Selenium WebDriver
+Java 8 or higher
 
 ## Clone Project
 
