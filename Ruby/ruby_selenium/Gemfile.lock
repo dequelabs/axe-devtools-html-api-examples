@@ -1,0 +1,58 @@
+GEM
+  remote: https://agora.dequecloud.com/artifactory/api/gems/devtools-gems/
+  specs:
+    axe-devtools-api (4.4.0)
+      axe-core-api (~> 4.4.0)
+      metrics-library (~> 3.1.0)
+    axe-devtools-selenium (4.4.0)
+      axe-devtools-api
+      dumb_delegator
+    metrics-library (3.1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    axe-core-api (4.4.1)
+      dumb_delegator
+      virtus
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    childprocess (4.1.0)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    dumb_delegator (1.0.0)
+    ice_nine (0.11.2)
+    nokogiri (1.13.7-arm64-darwin)
+      racc (~> 1.4)
+    racc (1.6.0)
+    rexml (3.2.5)
+    rubyzip (2.3.2)
+    selenium-webdriver (4.3.0)
+      childprocess (>= 0.5, < 5.0)
+      rexml (~> 3.2, >= 3.2.5)
+      rubyzip (>= 1.2.2, < 3.0)
+      websocket (~> 1.0)
+    thread_safe (0.3.6)
+    virtus (2.0.0)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+    webdrivers (5.0.0)
+      nokogiri (~> 1.6)
+      rubyzip (>= 1.3.0)
+      selenium-webdriver (~> 4.0)
+    websocket (1.2.9)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  axe-devtools-selenium (~> 4.4.0)!
+  webdrivers (~> 5.0)
+
+BUNDLED WITH
+   2.3.11
