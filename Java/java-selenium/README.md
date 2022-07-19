@@ -33,7 +33,7 @@ Install the dependencies including **axe DevTools Java Selenium** for the projec
 The following command installs all the required dependencies to run this example project.
 
 ```sh
-mvn compile
+mvn clean install
 ```
 
 ## Run Tests
