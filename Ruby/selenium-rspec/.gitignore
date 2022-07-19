@@ -49,6 +49,7 @@ testem.log
 /axe-reports
 /.bundle
 /Gemfile.lock
+/resources
 
 # System Files
 /.DS_Store
