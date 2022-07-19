@@ -14,9 +14,6 @@ describe 'Analyse webpage for a11y issues' do
     expect(@driver.page).to be_audited_for_accessibility.logging_results({ui_state: 'recipe-card-analyse'})
   end
 
-  # it 'running bash commands' do
-  #   exec'echo "hi"'
-  # end
     
   after(:each) do
     @driver.page.quit
