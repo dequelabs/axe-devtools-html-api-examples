@@ -20,11 +20,10 @@ describe 'Analyse webpage for a11y issues' do
   end
 
   after(:all) do
-    logs = "/Users/dq_ankit/main_project/axe-devtools-html-api-examples/Ruby/selenium-rspec/axe-reports"
+    logs = (Dir.pwd)<<"/axe-reports"
     reporter = (Dir.pwd)<<'/resources/reporter-cli-macos'
     destination = (Dir.pwd)<<'/a11y-results'
     command_html = reporter << " " << logs << " --destination " << destination << " --format html"
-    puts (command_html)
     system command_html
   end
 
