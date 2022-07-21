@@ -12,7 +12,7 @@ Ruby greater than version 2.6.0 along with the Bundler
 
 Follow these steps to clone and navigate to the directory:
 1. Clone this repo from GitHub.
-2. Open the project in your favourite python IDE.
+2. Open the project in your favourite code editor.
 3. Navigate from the root of the repo to this example with the following command:
 
 ```sh
