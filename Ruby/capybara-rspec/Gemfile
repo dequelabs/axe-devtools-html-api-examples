@@ -5,3 +5,4 @@ gem "axe-devtools-rspec", '~> 4.4.0', :source => 'https://agora.dequecloud.com/a
 gem "rspec"
 gem 'capybara', '~> 3.37', '>= 3.37.1'
 gem 'selenium-webdriver', '~> 4.3'
+gem "cuprite"

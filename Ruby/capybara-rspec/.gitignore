@@ -49,6 +49,7 @@ testem.log
 /playwright-report/
 /.bundle
 /Gemfile.lock
+/axe-reports
 
 
 # System Files
