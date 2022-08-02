@@ -3,8 +3,6 @@ require 'axe-rspec'
 
 
 driver = AxeCapybara.configure(:chrome) do |c|
-  # see below for a full list of configurations
-#   c.jslib_path = "next-version/axe.js"
 end
 
 
