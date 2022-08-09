@@ -46,8 +46,9 @@ yarn-error.log
 testem.log
 /typings
 /a11y-results
-/playwright-report/
+/axe-reports
 /Gemfile.lock
+/.bundle
 
 # System Files
 /.DS_Store
