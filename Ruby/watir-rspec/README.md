@@ -1,8 +1,8 @@
-![logo](./docs/logo-ruby-rspec.png)
+![logo](./docs/logo-ruby-watir-rspec.png)
 
-# axe DevTools Ruby RSpec with Watir API Example
+# axe DevTools Ruby Watir with RSpec API Example
 
-Using axe DevTools Ruby RSpec with Watir, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools Ruby RSpec with Watir is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
+Using axe DevTools Ruby , you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools Ruby Watir with RSpec is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
 
