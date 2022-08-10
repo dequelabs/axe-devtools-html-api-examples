@@ -1,4 +1,4 @@
-![logo](./docs/logo-ruby-rspec.png)
+![logo](./docs/logo-ruby-capybara.png)
 
 # axe DevTools Ruby RSpec with Capybara API Example
 
