@@ -1,8 +1,8 @@
-![logo](./docs/logo-ruby-capybara.png)
+![logo](./docs/logo-ruby-capybara-rspec.png)
 
-# axe DevTools Ruby RSpec with Capybara API Example
+# axe DevTools Ruby Capybara with RSpec API Example
 
-Using axe DevTools Ruby RSpec with Capaybara, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools Ruby RSpec with Capybara is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
+Using axe DevTools Ruby Capybara with RSpec, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools Ruby Capybara with RSpec is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
 
