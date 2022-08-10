@@ -1,8 +1,8 @@
-![logo](./docs/logo-ruby-rspec.png)
+![logo](./docs/logo-ruby-selenium-rspec.png)
 
-# axe DevTools Ruby RSpec with Selenium API Example
+# axe DevTools Ruby Selenium with RSpec API Example
 
-Using axe DevTools Ruby RSpec with Selenium, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools Ruby RSpec with Selenium is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
+Using axe DevTools Ruby Selenium with RSpec, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools Ruby Selenium with RSpec is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
 
