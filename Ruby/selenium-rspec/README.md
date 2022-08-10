@@ -21,7 +21,35 @@ cd Ruby/selenium-rspec
 
 ## Binary Reporter
 
+Follow these steps to add binary reporter for publishing results:
+
 Download the respective [Binary reporter](https://docs.deque.com/devtools-html/4.0.0/en/downloads#binary-reporter) and place it in the **_resources_** directory.
+
+### MAC Operating System (Default)
+
+The default file set to MAC Operating System users.
+
+```sh
+    reporter = (Dir.pwd)<<'/resources/reporter-cli-macos'
+```
+
+Other than MAC Operating System users, open the **example_spec.rb** file and modify the file as per your operating system.
+
+### Linux Operating System Users
+
+Update the line 24 as follows:
+
+```sh
+    reporter = (Dir.pwd)<<'/resources/reporter-cli-linux'
+```
+
+### Windows Operating System Users
+
+Update the line 24 as follows:
+
+```sh
+    reporter = (Dir.pwd)<<'/resources/reporter-cli-win.exe'
+```
 
 ## Install Dependencies
 
@@ -84,7 +112,6 @@ bundle install
 
 The **_spec_** directory contains the example test files **`example_spec.rb`** and **`spec_helper.rb`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
-
 The following command runs the test files in the **_spec_** directory.
 
 ```sh
@@ -99,12 +126,10 @@ The **`executive-report.html`** file is an executive summary report aggregating 
 
 Every time you run **`bin/rspec`**, it replaces all previously saved results with the latest results in the **`a11y-results`** directory, so if you want to retain previous test results, you should rename or save them in a different directory. 
 
-If you want to modify this project and publish your results in a folder other than **`./ally-results`**, you should update the output directory in the **`example_spec.rb`** file. 
+If you want to modify this project and publish your results in a folder other than **`./ally-results`**, you should update the output directory in the **`example_spec.rb`** file.
 
 ## Additional Information
 
 - [axe DevTools Ruby Overview](https://docs.deque.com/devtools-html/4.0.0/en/rb-introduction)
 - [Ruby RSpec API Reference](https://docs.deque.com/devtools-html/4.0.0/en/rb-rspec#api)
 - [axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
-
- 
