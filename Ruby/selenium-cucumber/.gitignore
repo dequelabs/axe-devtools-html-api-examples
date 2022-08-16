@@ -49,6 +49,7 @@ testem.log
 /axe-reports
 /Gemfile.lock
 /.bundle
+/resources/reporter-cli-macos
 
 # System Files
 /.DS_Store
