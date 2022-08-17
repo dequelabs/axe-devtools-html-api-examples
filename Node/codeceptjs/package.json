@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs": "rimraf ./a11y-results && codeceptjs run --steps",
         "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
         "codeceptjs:ui": "codecept-ui --app",
         "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
