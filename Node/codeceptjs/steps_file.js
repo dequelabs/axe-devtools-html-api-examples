@@ -17,7 +17,6 @@ module.exports = function() {
       const results = await new AxeDevtoolsBuilder({ page }).analyze()
       reporter.logTestResult("homepage-no-flow", results);
       await browser.close();
-      // console.log(results);
       }
     // Define custom steps here, use 'this' to access default methods of I.
     // It is recommended to place a general 'login' function here.
@@ -30,20 +29,13 @@ module.exports = function() {
       await page.locator('#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button').click();
       const results = await new AxeDevtoolsBuilder({ page }).analyze()
       reporter.logTestResult("homepage-altered-state", results);
-      // console.log(results);
       await browser.close();
     }
-      
       ,
-
       createReports: async function() {
       await reporter.buildHTML("./a11y-results/html/");
       await reporter.buildJUnitXML("./a11y-results/xml/");
       await reporter.buildCSV("./a11y-results/csv/");
-      // await browser.close();
-      
-    
-
     }
   });
 }
