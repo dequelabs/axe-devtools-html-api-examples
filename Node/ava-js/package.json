@@ -4,7 +4,7 @@
   "description": "This example project uses ava test runner with `@axe-devtools/reporter`, `@axe-devtools/webdriverjs`, and `selenium-webdriver`. See `README` to learn more.",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "rimraf ./a11y-results && ava"
   },
   "keywords": [],
   "author": "",
