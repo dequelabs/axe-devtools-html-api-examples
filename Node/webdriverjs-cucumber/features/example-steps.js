@@ -9,7 +9,7 @@ driver =  new WebDriver.Builder().forBrowser('chrome').build();
 
 //Creation of axe DevTools driver object, taking browser and standards to use for testing
 axeDevTools =  new AxeDevToolsWebdriverJS(driver);
-reporter = new Reporter('DevTools-reporter', './a11y-results/homepageFlows')
+let reporter = new Reporter('DevTools-reporter', './a11y-results/homepageFlows')
 let count = 1;
 
 Then('the page should be audited for accessibility', async function () {
