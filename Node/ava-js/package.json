@@ -1,13 +1,13 @@
 {
   "name": "ava",
-  "version": "1.0.0",
+  "version": "4.4.1",
   "description": "This example project uses ava test runner with `@axe-devtools/reporter`, `@axe-devtools/webdriverjs`, and `selenium-webdriver`. See `README` to learn more.",
   "main": "index.js",
   "scripts": {
     "test": "rimraf ./a11y-results && ava"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ankit Kathal",
   "license": "ISC",
   "devDependencies": {
     "ava": "^4.3.1",

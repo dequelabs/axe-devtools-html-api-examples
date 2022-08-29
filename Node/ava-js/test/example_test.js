@@ -1,4 +1,4 @@
-const test =require ('ava');
+const test = require ('ava');
 const AxeDevToolsWebdriverJS = require('@axe-devtools/webdriverjs');
 const  WebDriver = require('selenium-webdriver');
 const { By } = require('selenium-webdriver');
