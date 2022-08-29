@@ -1,5 +1,4 @@
-const { Given, When, Then } = require('cucumber');
-const { AfterAll } = require('cucumber');
+const { Given, When, Then, AfterAll } = require('cucumber');
 const AxeDevToolsWebdriverJS = require('@axe-devtools/webdriverjs');
 const WebDriver = require('selenium-webdriver');
 const { By } = require('selenium-webdriver');
