@@ -15,8 +15,6 @@ Then('the page should be audited for accessibility', async function () {
     const results = await axeDevTools.analyze();
     temp=count+=1
     reporter.logTestResult('Scan'+temp , results);
-
-
 });
 
 Given('I visit a11y test website homepage', async function () {
