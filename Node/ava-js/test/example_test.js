@@ -3,7 +3,7 @@ const AxeDevToolsWebdriverJS = require('@axe-devtools/webdriverjs');
 const  WebDriver = require('selenium-webdriver');
 const { By } = require('selenium-webdriver');
 const Reporter = require('@axe-devtools/reporter').default;
-let reporter = new Reporter('DevTools-reporter', './a11y-results/homepageFlows');
+const reporter = new Reporter('DevTools-reporter', './a11y-results/homepageFlows');
 
 
 
@@ -15,7 +15,7 @@ test.beforeEach(async t => {
 
 test('homepage', async homepage => {
     const {driver} = homepage.context;
-    let axeDevTools =  new AxeDevToolsWebdriverJS(driver);
+    const axeDevTools =  new AxeDevToolsWebdriverJS(driver);
     // Analyzing foe a11y issues
     const results = await axeDevTools.analyze();
     // Logging the result using the reporter
@@ -24,13 +24,13 @@ test('homepage', async homepage => {
 }) 
 
 test('recipeCard', async recipeCard => {
-    const {driver} = recipeCard.context;
+   const {driver} = recipeCard.context;
    await driver.findElement(By.css('#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button')).click();
-   let axeDevTools =  new AxeDevToolsWebdriverJS(driver);
+   const axeDevTools =  new AxeDevToolsWebdriverJS(driver);
    // Analyzing foe a11y issues
-   const results2 = await axeDevTools.analyze();
+   const results = await axeDevTools.analyze();
    // Logging the result using the reporter
-   reporter.logTestResult('homepage-altered-state', results2);
+   reporter.logTestResult('homepage-altered-state', results);
    recipeCard.pass();
 }) 
 

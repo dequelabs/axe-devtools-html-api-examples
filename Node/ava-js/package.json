@@ -10,10 +10,10 @@
   "author": "Ankit Kathal",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^4.3.1",
+    "ava": "^4.3.3",
     "@axe-devtools/reporter": "^4.4.0",
     "@axe-devtools/webdriverjs": "^4.4.1",
-    "selenium-webdriver": "^4.1.2",
+    "selenium-webdriver": "^4.4.0",
     "rimraf": "^3.0.2"
 
   }
