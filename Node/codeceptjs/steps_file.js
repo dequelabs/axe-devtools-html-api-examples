@@ -2,7 +2,7 @@
 const AxeDevtoolsBuilder = require("@axe-devtools/playwright").default;
 const AxeDevtoolsReporter = require("@axe-devtools/reporter").default;
 const playwright = require('playwright');
-reporter = new AxeDevtoolsReporter(
+const reporter = new AxeDevtoolsReporter(
   "DevTools-Reporter",
   "./a11y-results/homepageFlows"
 );
