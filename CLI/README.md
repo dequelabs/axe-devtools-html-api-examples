@@ -12,6 +12,7 @@ This example project demonstrates how axe DevTools CLI spec mode is used to dete
 ## Clone Project
 
 Follow these steps to clone and navigate to the directory:
+
 1. Clone this repo from GitHub.
 2. Open the command window and navigate from the root of the repo to this example with the following command:
 
@@ -20,6 +21,7 @@ cd CLI
 ```
 
 You can use CLI in two modes:
+
 - Spec Mode
 - URI Mode
 
@@ -28,7 +30,6 @@ This example demonstrates spec mode. For URI mode, see our [axe DevTools HTML do
 ## Using Spec File
 
 The **`example_spec.json`** is a spec file that describes the pages to test. The page list is grouped in projects, which can be used to organize tests. Each page can have a list of actions that describe a workflow. For more information, see the [Spec files](https://docs.deque.com/devtools-html/4.0.0/en/cli-workflow-specs#spec-files) section of the CLI documentation.
-
 
 ### Run Tests
 
@@ -50,5 +51,3 @@ The **`executive-report.html`** file is an executive summary report aggregating 
 
 - [axe DevTools CLI Overview](https://docs.deque.com/devtools-html/4.0.0/en/cli-home)
 - [axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
-
- 

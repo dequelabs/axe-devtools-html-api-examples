@@ -1,28 +1,27 @@
-const { AxeDevToolsWebdriverIO } = require("@axe-devtools/webdriverio");
-const webdriverio = require("webdriverio");
+const { AxeDevToolsWebdriverIO } = require('@axe-devtools/webdriverio')
+const webdriverio = require('webdriverio')
 
-let client;
+let client
 
-describe("simple amazon page", () => {
+describe('simple amazon page', () => {
   beforeEach(async () => {
     client = await webdriverio.remote({
-      services: ["chromedriver"],
+      services: ['chromedriver'],
       capabilities: {
-        browserName: "chrome"
+        browserName: 'chrome'
       },
-      logLevel: "info"
-    });
-    await client.url("https://broken-workshop.dequelabs.com/");
-  });
+      logLevel: 'info'
+    })
+    await client.url('https://broken-workshop.dequelabs.com/')
+  })
 
   afterEach(async () => {
-    await client.deleteSession();
-  });
+    await client.deleteSession()
+  })
 
-
-  it("console.log the accessibility violations", async () => {
-    const attest = new AxeDevToolsWebdriverIO({ client }).disableFrame("iframe");
-    const results = await attest.analyze();
-    console.log(results.violations);
-  });
-});
+  it('console.log the accessibility violations', async () => {
+    const attest = new AxeDevToolsWebdriverIO({ client }).disableFrame('iframe')
+    const results = await attest.analyze()
+    console.log(results.violations)
+  })
+})
