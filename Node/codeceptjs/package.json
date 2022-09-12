@@ -1,0 +1,31 @@
+{
+    "name": "codeceptjs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "codeceptjs": "rimraf ./a11y-results && codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+    },
+    "keywords": [
+        "codeceptjs",
+        "example project",
+        "axe-devtools-api integration"
+    ],
+    "author": "",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.8.0",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.4.7",
+        "codeceptjs": "^3.3.5",
+        "playwright": "^1.25.0",
+        "@axe-devtools/playwright": "^4.4.2",
+        "@axe-devtools/reporter": "^4.4.0",
+        "rimraf": "^3.0.2"
+    }
+}
