@@ -17,8 +17,8 @@ repositories {
     maven{
         url "https://agora.dequecloud.com/artifactory/devtools-maven"
         credentials {
-            username "ankit.kathal@deque.com"
-            password "AKCp8krKyvm9axgVeApCoH7keJKnAyHUvhdA1CoSRdKt4wewnq271NEHiPtNbMJ3cHYVkYHzk"
+            username "$mavenUser"
+            password "$mavenPassword"
         }
         authentication {
             basic(BasicAuthentication)
