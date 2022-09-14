@@ -1,34 +1,26 @@
 {
-    "checks": [
-      {
-        "id": "test",
-        "options": [
-          "test"
-        ],
-        "evaluate": "function() { return false; }"
+  "checks": [
+    {
+      "id": "test",
+      "options": ["test"],
+      "evaluate": "function() { return false; }"
+    }
+  ],
+  "rules": [
+    {
+      "id": "html-has-lang",
+      "selector": "html",
+      "excludeHidden": true,
+      "enabled": false,
+      "pageLevel": false,
+      "any": ["has-lang"],
+      "all": [],
+      "none": [],
+      "tags": ["cat.language", "wcag2a", "wcag311"],
+      "metadata": {
+        "help": "<html> element must have a lang attribute",
+        "description": "Ensures every HTML document has a lang attribute"
       }
-    ],
-    "rules": [
-        {
-            "id": "html-has-lang",
-            "selector": "html",
-            "excludeHidden": true,
-            "enabled": false,
-            "pageLevel": false,
-            "any": [
-              "has-lang"
-            ],
-            "all": [],
-            "none": [],
-            "tags": [
-              "cat.language",
-              "wcag2a",
-              "wcag311"
-            ],
-            "metadata": {
-              "help": "<html> element must have a lang attribute",
-              "description": "Ensures every HTML document has a lang attribute"
-            }
-          }
-    ]
-  }
+    }
+  ]
+}

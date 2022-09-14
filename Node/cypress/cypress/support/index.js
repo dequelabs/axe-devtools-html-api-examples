@@ -21,6 +21,6 @@ import './commands'
 
 // afterEach(async () => {
 //       const resultsDir = './a11y-results/'
- 
+
 //       await cy.task('reportAsHTML', {resultsDir})
-// }); 
+// });

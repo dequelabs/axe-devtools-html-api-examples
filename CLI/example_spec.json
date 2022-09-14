@@ -7,9 +7,7 @@
         {
           "name": "Homepage is accessible",
           "url": "https://broken-workshop.dequelabs.com/",
-          "actions": [
-            "analyze"
-          ]
+          "actions": ["analyze"]
         },
         {
           "name": "Homepage is accessible, recipe card",

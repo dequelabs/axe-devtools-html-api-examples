@@ -5,6 +5,7 @@
 Using axe DevTools WebDriverJS, you can integrate axe DevTools into your existing testing environment. This example project demonstrates how axe DevTools WebDriverJS is used to detect accessibility issues and generates reports in CSV, HTML, JSON, and XML formats.
 
 ## Prerequisites
+
 - npm
 - NodeJS (6.10 or higher)
 
@@ -25,7 +26,7 @@ cd Node/webdriver.js_vanilla
 Install the dependencies including **axe DevTools Webdriverjs** and **DevTools Reporter** for the project.
 
 > **_NOTE:_**
->You need a valid license to use our APIs. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-wj-install-agora) page. After configuring the access to Deque's private registry, you can install the dependencies for this project.
+> You need a valid license to use our APIs. For more information, see [Install from Deque’s Agora](https://docs.deque.com/devtools-html/4.0.0/en/node-wj-install-agora) page. After configuring the access to Deque's private registry, you can install the dependencies for this project.
 
 The following command installs all the required dependencies to run this example project.
 
@@ -59,9 +60,9 @@ The **`/html/executive-report.html`** file is an executive summary report aggreg
   },
 ```
 
-Every time you run the **`npm test`**, the **`rimraf`** command clears all saved results from the **`a11y-results`** directory, so if you want to retain previous test results, you should remove **`rimraf`** from the **`scripts`** object. 
+Every time you run the **`npm test`**, the **`rimraf`** command clears all saved results from the **`a11y-results`** directory, so if you want to retain previous test results, you should remove **`rimraf`** from the **`scripts`** object.
 
-If you want to modify this project and publish your results in a different folder other than **`./ally-results`**, you should update the output directory in the test file and the **test** parameter. 
+If you want to modify this project and publish your results in a different folder other than **`./ally-results`**, you should update the output directory in the test file and the **test** parameter.
 
 ## Additional Information
 

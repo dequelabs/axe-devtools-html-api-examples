@@ -1,0 +1,15 @@
+{
+  "name": "axe-devtools-html-api-examples",
+  "version": "1.0.0",
+  "repository": "git@github.com:dequelabs/axe-devtools-html-api-examples.git",
+  "author": "michael-siek <michaelsiek094@gmail.com>",
+  "scripts": {
+    "prepare": "husky install",
+    "fmt": "prettier --write '**/*.{md,js,json,ts}'"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
+}
