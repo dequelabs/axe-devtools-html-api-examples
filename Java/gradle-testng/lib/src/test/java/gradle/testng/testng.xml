@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/Users/dq_ankit/main_project/axe-devtools-html-api-examples/Java/gradle-testng"><classes><class name="gradle.testng.exampleTest"><methods><include name="test_a11y_workshop_homepage"/><include name="test_recipe_card_a11y_workshop_homepage"/></methods></class></classes></test></suite>
