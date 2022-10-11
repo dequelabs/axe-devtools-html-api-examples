@@ -6,16 +6,16 @@ driver = AxeCapybara.configure(:chrome) do |c|
 end
 
 
-describe 'Analyse webpage for a11y issues'  do 
-  it 'Analyse broken-workshop homepage for a11y issues' do
+describe 'Analyze webpage for a11y issues'  do 
+  it 'Analyze broken-workshop homepage for a11y issues' do
     @driver.page.visit "https://broken-workshop.dequelabs.com/"
-    expect(@driver.page).to be_audited_for_accessibility.logging_results({ui_state: 'homepage-analyse'})
+    expect(@driver.page).to be_audited_for_accessibility.logging_results({ui_state: 'homepage-analyze'})
   end
 
-  it 'Analyse broken-workshop recipe card for a11y issues' do
+  it 'Analyze broken-workshop recipe card for a11y issues' do
     @driver.page.visit "https://broken-workshop.dequelabs.com/"
     @driver.page.find('#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button').click
-    expect(@driver.page).to be_audited_for_accessibility.logging_results({ui_state: 'recipe-card-analyse'})
+    expect(@driver.page).to be_audited_for_accessibility.logging_results({ui_state: 'recipe-card-analyze'})
   end
 
 
