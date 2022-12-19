@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+gem 'watir-rspec', '~> 3.0'
+gem 'webdrivers', '~> 5.0'
+gem "axe-devtools-watir", :source => 'https://agora.dequecloud.com/artifactory/api/gems/devtools-gems'
+gem "axe-devtools-rspec", '~> 4.4.0', :source => 'https://agora.dequecloud.com/artifactory/api/gems/devtools-gems'
