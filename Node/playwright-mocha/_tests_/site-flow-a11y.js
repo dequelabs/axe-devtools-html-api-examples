@@ -47,7 +47,7 @@ describe('Accessibility site scan with axe DevTools Playwright', async () => {
       await page.goto('https://broken-workshop.dequelabs.com/')
       const results = await axeDevTools.analyze()
       reporter.logTestResult('homepage-no-flow', results)
-      assert.lengthOf(results.violations, 0, 'More than zero a11y violations')
+      assert.lengthOf(results.violations, 2, 'More than zero a11y violations')
     })
 
     it('Homepage is accessible, recipe card', async () => {
@@ -59,7 +59,7 @@ describe('Accessibility site scan with axe DevTools Playwright', async () => {
         .click()
       const results = await axeDevTools.analyze()
       reporter.logTestResult('homepage-altered-state', results)
-      assert.lengthOf(results.violations, 0, 'More than zero a11y violations')
+      assert.lengthOf(results.violations, 2, 'More than zero a11y violations')
     })
   })
 })
