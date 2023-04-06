@@ -59,5 +59,4 @@ If you want to modify this project and publish your results in a folder other th
 
 ## Additional Information
 
-- [Java Selenium API Reference](https://docs.deque.com/devtools-html/4.0.0/en/java-api-selenium)
 - [axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
