@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Selenide</groupId>
+  <artifactId>axe-devtools-java-examples-selenide</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>axe DevTools API Integration with Selenide Framework in Java</name>
+  
+  	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	
+	<repositories>
+        <repository>
+            <id>deque</id>
+            <url>https://agora.dequecloud.com/artifactory/devtools-maven/</url>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+    	
+    	<dependency>
+		    <groupId>com.codeborne</groupId>
+		    <artifactId>selenide</artifactId>
+		    <version>6.12.4</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.deque.html.axe-devtools</groupId>
+		    <artifactId>selenium</artifactId>
+		    <version>4.2.2</version>
+    	</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>7.7.0</version>
+		    <scope>test</scope>
+		</dependency>
+    	
+    </dependencies>
+	
+</project>
