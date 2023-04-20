@@ -6,7 +6,8 @@ Using axe DevTools Java Karate, you can integrate axe DevTools into your existin
 
 ## Prerequisites
 
-Java 8 or higher
+* Java 8 or higher
+* Ensure to use the ChromeDriver version same as the Browser version.
 
 ## Clone Project
 
@@ -22,7 +23,35 @@ cd Java/karate
 
 ## Binary Reporter
 
-Download the respective [Binary reporter](https://docs.deque.com/devtools-html/4.0.0/en/downloads#binary-reporter) for your operating system and place it in the **_src/test/resources_** directory.
+Follow these steps to add binary reporter for publishing results:
+
+Download the respective [Binary reporter](https://docs.deque.com/devtools-html/4.0.0/en/downloads#binary-reporter) and place it in the **_resources_** directory.
+
+### MAC Operating System (Default)
+
+The default file set to MAC Operating System users.
+
+```sh
+    "src/test/resources/reporter-cli-macos"
+```
+
+Other than MAC Operating System users, open the **axeFunctions/Functions.java** file and modify the file as per your operating system.
+
+### Linux Operating System Users
+
+Update the line 31 as follows:
+
+```sh
+    "src/test/resources/reporter-cli-linux"
+```
+
+### Windows Operating System Users
+
+Update the line 31 as follows:
+
+```sh
+    "src/test/resources/reporter-cli-win.exe"
+```
 
 ## Install Dependencies
 
@@ -39,9 +68,9 @@ mvn clean install
 
 ## Run Tests
 
-The **_/src/test/java/example_** directory contains the file **`ExampleTest.java`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
+The **_/src/test/java/testRunner_** directory contains the file **`ExampleTest.java`** that analyzes the page `https://broken-workshop.dequelabs.com/` for accessibility issues.
 
-The following command runs the file in the **_/src/test/java/example_** directory.
+The following command runs the file in the **_/src/test/java/testRunner** directory.
 
 ```sh
 mvn test
@@ -55,8 +84,8 @@ The **`executive-report.html`** file is an executive summary report aggregating 
 
 Every time you run **`mvn test`**, it replaces all previously saved results with the latest results in the **`a11y-results`** directory, so if you want to retain previous test results, you should rename or save them in a different directory.
 
-If you want to modify this project and publish your results in a folder other than **`ally-results`**, you should update the output directory in the **`ExampleTest.java`** file.
+If you want to modify this project and publish your results in a folder other than **`ally-results`**, you should update the output directory in the **`axeFunctions/Functions.java`** file.
 
 ## Additional Information
 
-- [axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
+ [axe-core Rule Descriptions](https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md)
