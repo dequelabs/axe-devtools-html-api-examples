@@ -39,7 +39,7 @@ Other than MAC Operating System users, open the **axeFunctions/Functions.java** 
 
 ### Linux Operating System Users
 
-Update the line 31 as follows:
+Update the line 33 as follows:
 
 ```sh
     "src/test/resources/reporter-cli-linux"
@@ -47,7 +47,7 @@ Update the line 31 as follows:
 
 ### Windows Operating System Users
 
-Update the line 31 as follows:
+Update the line 33 as follows:
 
 ```sh
     "src/test/resources/reporter-cli-win.exe"

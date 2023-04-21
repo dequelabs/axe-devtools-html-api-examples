@@ -14,20 +14,22 @@ public class Functions {
 	
 	public static AxeReportingOptions _reportOptions = new AxeReportingOptions();
 	public static AxeSelenium axeSelenium = new AxeSelenium(); 
-	public static WebDriver webDriver = new ChromeDriver();
-	public static AxeDriver axeDriver = new AxeDriver(webDriver);
     
 	public void axeScan(String url) {
+    	System.setProperty("webdriver.http.factory", "jdk-http-client");
+		WebDriver webDriver = new ChromeDriver();
+		AxeDriver axeDriver = new AxeDriver(webDriver);
+
 		webDriver.get(url);
 		AxeConfiguration.configure().testSuiteName("Test").outputDirectory("axe-json-reports/");
-		Results results1 = axeSelenium.logResults(_reportOptions.uiState("Homepage_scan")).run(axeDriver);
+		Results homePageScanResults = axeSelenium.logResults(_reportOptions.uiState("Homepage_scan")).run(axeDriver);
 		webDriver.findElement(By.cssSelector("#main-content > div.Recipes > div:nth-child(1) > div.Recipes__card-foot > button")).click();
-		Results results2 = axeSelenium.logResults(_reportOptions.uiState("Recipe_card_scan")).run(axeDriver);
+		Results recipeCardScanResults = axeSelenium.logResults(_reportOptions.uiState("Recipe_card_scan")).run(axeDriver);
 		webDriver.quit();
 	}
 	
 	public void generateReports() {
-		Runtime rt = Runtime.getRuntime();
+		Runtime runTime = Runtime.getRuntime();
 	    String reporter = new File("src/test/resources/reporter-cli-macos").getAbsolutePath();
 	    String Logger = new File("axe-json-reports/").getAbsolutePath();
 	    String Destination = new File("a11y-results/").getAbsolutePath();
@@ -38,9 +40,9 @@ public class Functions {
 	    String command_csv =
 	        reporter + " " + Logger + " --destination " + Destination + " --format csv";
 	    try {
-	      rt.exec(command_html);
-	      rt.exec(command_csv);
-	      rt.exec(command_xml);
+	      runTime.exec(command_html);
+	      runTime.exec(command_csv);
+	      runTime.exec(command_xml);
 	    } catch (Exception e) {
 	      e.printStackTrace();
 	    }

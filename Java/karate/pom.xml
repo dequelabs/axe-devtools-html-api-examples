@@ -3,7 +3,7 @@
   <groupId>com.deque</groupId>
   <artifactId>axe-devtools-java-examples-karate</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>axe DevTools API Integration with Karate Framework</name>
+  <name>axe DevTools Selenium API Integration with Karate Framework</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,16 +23,31 @@
         <dependency>
 	      <groupId>com.deque.html.axe-devtools</groupId>
 	      <artifactId>selenium</artifactId>
-	      <version>4.2.2</version>
+	      <version>4.6.0</version>
 	    </dependency>
 	    
 	    <!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5 -->
 		<dependency>
 		    <groupId>com.intuit.karate</groupId>
 		    <artifactId>karate-junit5</artifactId>
-		    <version>1.3.1</version>
+		    <version>1.4.0</version>
             <scope>test</scope>
 		</dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.3.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-http-jdk-client -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-http-jdk-client</artifactId>
+            <version>4.8.3</version>
+        </dependency>
+
 	
 	</dependencies>
 
