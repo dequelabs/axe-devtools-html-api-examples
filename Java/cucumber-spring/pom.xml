@@ -96,5 +96,17 @@
             <version>2.3.4.RELEASE</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-http-jdk-client -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-http-jdk-client</artifactId>
+            <version>4.9.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.9.0</version>
+        </dependency>
     </dependencies>
 </project>

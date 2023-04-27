@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer example project",
+  "name": "puppeteer-example-project",
   "version": "4.4.0",
   "description": "This example project uses `@axe-devtools/reporter`, `@axe-devtools/puppeteer`, and `puppeteer`. See `README` to learn more.",
   "main": "index.js",

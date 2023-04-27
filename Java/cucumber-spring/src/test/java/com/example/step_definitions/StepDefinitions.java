@@ -37,6 +37,7 @@ public class StepDefinitions {
 
     @Before
     public void setup() throws IOException {
+		System.setProperty("webdriver.http.factory", "jdk-http-client");
         webDriver = new ChromeDriver();
         axeWorld.setPage(new AxeDriver(webDriver));
     }
