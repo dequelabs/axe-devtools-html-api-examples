@@ -47,3 +47,13 @@ testem.log
 .DS_Store
 Thumbs.db
 Java/karate/src/test/resources/reporter-cli-macos
+Java/java-selenium/src/test/resources/reporter-cli-macos
+Node/cypress/cypress/screenshots/reporter.spec.js/ABCD Tech Computers -- Laptop Page accessible -- after all hook (failed).png
+Node/cypress/cypress/videos/computers.spec.js.mp4
+Node/cypress/cypress/videos/home.spec.js.mp4
+Node/cypress/cypress/videos/reporter.spec.js.mp4
+Python/robot/resources/reporter-cli-macos
+Python/robot/selenium-screenshot-1.png
+Python/robot/selenium-screenshot-2.png
+Python/robot/selenium-screenshot-3.png
+Python/robot/selenium-screenshot-4.png
