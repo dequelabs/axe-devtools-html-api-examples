@@ -7,6 +7,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.io.IOException;
 
@@ -23,6 +24,7 @@ public class StepDefinitions {
     @Before
     public void setup() throws IOException {
         System.setProperty("webdriver.http.factory", "jdk-http-client");
+        WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver();
         axeWorld.setPage(new AxeDriver(webDriver));
     }

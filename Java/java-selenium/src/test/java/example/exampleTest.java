@@ -24,6 +24,7 @@ public class exampleTest {
   public static void initiate_drivers() {
     _reportOptions = new AxeReportingOptions();
     WebDriverManager.chromedriver().setup();
+    System.setProperty("webdriver.http.factory", "jdk-http-client");
     driver = new ChromeDriver();
     axedriver = new AxeDriver(driver);
     axeSelenium = new AxeSelenium();
