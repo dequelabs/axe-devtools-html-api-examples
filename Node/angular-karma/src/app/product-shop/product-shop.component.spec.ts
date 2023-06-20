@@ -21,9 +21,5 @@ describe('ProductShopComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  //   axeDevTools.run(component).then((results:any) => {
-  //     console.log(results);
-    
-  //  });
   });
 });
