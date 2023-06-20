@@ -36,7 +36,7 @@ testem.log
 /typings
 /example-project/a11y_reports/*
 /example-project/playwright-report/*
-/axe-results
+/a11y-results
 /example.*
 /.angular
 
