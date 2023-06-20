@@ -27,6 +27,5 @@ describe('ProductDetailsComponent', () => {
     const results = await axeDevTools.run(app);
     // @ts-ignore
     axeDevToolsReporter.logTestResult(results);
-    console.log(results);
   });
 });
