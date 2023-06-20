@@ -46,8 +46,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "node-polyfill-webpack-plugin": "^2.0.1",
-    "npm": "^9.6.5",
     "stream-http": "^3.2.0",
     "typescript": "~4.7.2"
   }
