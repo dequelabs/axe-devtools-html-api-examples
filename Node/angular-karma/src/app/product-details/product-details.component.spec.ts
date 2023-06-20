@@ -14,7 +14,6 @@ describe('ProductDetailsComponent', () => {
     })
     .compileComponents();
     axeDevTools.init('wcag2', function() {
-        // done();
       });
 
     fixture = TestBed.createComponent(ProductDetailsComponent);
