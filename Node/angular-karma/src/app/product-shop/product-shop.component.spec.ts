@@ -9,8 +9,6 @@ describe('ProductShopComponent', () => {
   
 
   beforeEach(async () => {
-    // axeDevTools.init();
-    // reporter = new Reporter('A11yResults', './a11y-results');
     await TestBed.configureTestingModule({
       declarations: [ ProductShopComponent ]
     })
