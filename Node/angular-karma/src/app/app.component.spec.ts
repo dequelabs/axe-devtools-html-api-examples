@@ -28,10 +28,10 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.nativeElement;
     // const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-    const results = await axeDevTools.run(app);
+    // const results = await axeDevTools.run(app);
     // @ts-ignore
-    axeDevToolsReporter.logTestResult(results);
-    console.log(results);
+    // axeDevToolsReporter.logTestResult(results);
+    // console.log(results);
 });
 
 

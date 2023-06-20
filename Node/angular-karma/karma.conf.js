@@ -36,14 +36,14 @@ module.exports = function (config) {
     },
     reporters: ['progress', 'kjhtml', 'axeDevTools'],
     axeDevToolsReporter: {
-      dir: 'axe-results'
+      dir: 'a11y-results'
     },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false,
+    singleRun: true,
     restartOnFileChange: true,
   });
 };
