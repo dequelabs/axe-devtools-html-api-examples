@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "rimraf rimraf ./a11y-results && ng test"
+    "test": "ng test",
+    "pretest": "rimraf ./a11y-results"
   },
   "private": true,
   "dependencies": {
