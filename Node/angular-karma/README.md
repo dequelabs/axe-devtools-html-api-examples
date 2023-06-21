@@ -70,7 +70,8 @@ An examlpe of the same is shown below
 
 ```json
   "scripts": {
-    "test": "rimraf rimraf ./a11y-results && ng test"
+    "pretest": "rimraf ./a11y-results",
+    "test": "ng test"
   },
 ```
 
