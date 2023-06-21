@@ -1,0 +1,46 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+/package-lock.json
+
+# profiling files
+chrome-profiler-events.json
+@@ -23,6 +23,8 @@ speed-measure-plugin.json
+*.launch
+.settings/
+*.sublime-workspace
+/.vscode
+
+
+# IDE - VSCode
+.vscode/*
+@@ -31,6 +33,8 @@ speed-measure-plugin.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+/.vscode
+
+
+# misc
+/.sass-cache
+@@ -41,9 +45,9 @@ npm-debug.log
+yarn-error.log
+testem.log
+/typings
+/example-project/a11y_reports/*
+/example-project/playwright-report/*
+/a11y-results
+/example.*
+/.angular
+
+# System Files
+.DS_Store
+/.DS_Store
+Thumbs.db
