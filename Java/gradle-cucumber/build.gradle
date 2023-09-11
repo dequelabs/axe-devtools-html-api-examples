@@ -1,0 +1,44 @@
+
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven{
+        url "https://agora.dequecloud.com/artifactory/devtools-maven"
+        credentials {
+            username "$mavenUser"
+            password "$mavenPassword"
+        }
+        authentication {
+            basic(BasicAuthentication)
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.namics.oss.spring.support.configuration:spring-configuration-support-starter:1.1.0'
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.platform:junit-platform-suite")
+    testImplementation("org.junit.jupiter:junit-jupiter")
+
+    testImplementation("io.cucumber:cucumber-java")
+    testImplementation("io.cucumber:cucumber-junit")
+    testImplementation("io.cucumber:cucumber-spring")
+    testImplementation("io.cucumber:cucumber-junit-platform-engine")
+    testImplementation(platform("io.cucumber:cucumber-bom:7.13.0"))
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.7.2'
+
+    implementation 'com.deque.html.axe-devtools:cucumber:4.7.0'
+
+    //This dependency is used for downloading the respective webdrivers like chromedriver geckodriver etc.
+    implementation 'io.github.bonigarcia:webdrivermanager:5.5.0'
+}
+
+test {
+    useJUnitPlatform()
+}

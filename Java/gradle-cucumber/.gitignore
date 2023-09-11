@@ -1,0 +1,17 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build and target output directory
+build
+target
+
+# Ignore Editor files
+/.idea
+
+#Ignoring Miscellaneous files
+/lib/axe-json-reports
+/lib/a11y-results
+/lib/src/test/resources/reporter-cli-macos
+/gradle.properties
+
+.DS_Store
