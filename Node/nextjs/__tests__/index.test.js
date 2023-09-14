@@ -1,10 +1,11 @@
 import 'jest-canvas-mock'
 import "@testing-library/jest-dom";
 import Home from '../src/pages/index'
-import { fireEvent, render, screen, waitFor, act, cleanup } from "@testing-library/react";
+import { render, screen, waitFor, cleanup } from "@testing-library/react";
 import axeDevtools from '@axe-devtools/browser'
 import Reporter from '@axe-devtools/reporter'
 import rimraf from 'rimraf'
+import userEvent from '@testing-library/user-event'
 
 describe('@axe-devtools/browser, jest, @testing-library/react', () => {
   let reporter
@@ -30,51 +31,56 @@ describe('@axe-devtools/browser, jest, @testing-library/react', () => {
     cleanup()
   })
 
-  it('ToDo App Home Page', async () => {
-    const { container } = render(<Home />)
-    
-    //Accessibility scan with axe DevTools API
-    const results = await axeDevtools.run(container)
-    reporter.logTestResult('home-page', results)
-  })
-
-  it("Add ToDo", async () => {
-    const { addToDocontainer } = render(<Home />);
-
-    const todoInput = screen.getByTestId("todo-input");
-    const addTodoButton = screen.getByTestId("add-todo");
-    const todoList = screen.getByTestId("todo-list");
-
-    await act(async () => {
-      fireEvent.change(todoInput, { target: { value: "New Todo" } });
-      addTodoButton.click();
-    });
-    await waitFor(() => {
-      expect(todoList).toHaveTextContent("New Todo");
-    });
-
-    //Perform Accessibility Scan with axe DevTools API
-    const results2 = await axeDevtools.run(addToDocontainer)
-    reporter.logTestResult('add-todo-component', results2)
+  describe('given the ToDo App home page', () => {
+    it('renders the page', async () => {
+      const { container } = render(<Home />)
+      
+      //Accessibility scan with axe DevTools API
+      const results = await axeDevtools.run(container)
+      reporter.logTestResult('home-page', results)
+    })
   });
 
-  it("Delete ToDo", async () => {
-    const { container } = render(<Home />);
+  describe('When adding a new todo item', () => {
+    it("should append onto the end of the list", async () => {
+      const { addToDocontainer } = render(<Home />);
 
-    const todoInput = screen.getByTestId("todo-input");
-    const addTodoButton = screen.getByTestId("add-todo");
+      const todoInput = screen.getByTestId("todo-input");
+      const addTodoButton = screen.getByTestId("add-todo");
+      const todoList = screen.getByTestId("todo-list");
 
-    fireEvent.change(todoInput, { target: { value: "Todo 1" } });
-    fireEvent.click(addTodoButton);
-    const deleteTodoButton = screen.getByTestId("delete-todo-0");
-    fireEvent.click(deleteTodoButton);
-    const todoList = screen.getByTestId("todo-list");
-    await waitFor(() => {
-      expect(todoList).toBeEmptyDOMElement();
+      await userEvent.type(todoInput, 'New Todo');
+      await userEvent.click(addTodoButton);
+
+      await waitFor(() => {
+        expect(todoList).toHaveTextContent("New Todo");
+      });
+
+      //Perform Accessibility Scan with axe DevTools API
+      const results = await axeDevtools.run(addToDocontainer)
+      reporter.logTestResult('add-todo-component', results)
     });
+  });
 
-    //Perform Accessibility Scan with axe DevTools API
-    const results = await axeDevtools.run(container)
-    reporter.logTestResult('delete-todo-component', results)
+  describe('When deleting a todo item', () => {
+    it("should be removed from the list", async () => {
+      const { container } = render(<Home />);
+
+      const todoInput = screen.getByTestId("todo-input");
+      const addTodoButton = screen.getByTestId("add-todo");
+
+      await userEvent.type(todoInput, 'Todo 1');
+      await userEvent.click(addTodoButton);
+      const deleteTodoButton = screen.getByTestId("delete-todo-0");
+      await userEvent.click(deleteTodoButton);
+      const todoList = screen.getByTestId("todo-list");
+      await waitFor(() => {
+        expect(todoList).toBeEmptyDOMElement();
+      });
+
+      //Perform Accessibility Scan with axe DevTools API
+      const results = await axeDevtools.run(container)
+      reporter.logTestResult('delete-todo-component', results)
+    });
   });
 })
