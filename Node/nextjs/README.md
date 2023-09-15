@@ -30,9 +30,9 @@ npm test
 
 ## Project Setup
 
-The sample test file is held within the `__test__` directory. This file contains an example of how to set up the axe DevTools Browser and Reporter APIs, test for accessibility, and generate formatted results.
+The sample test file is held within the `__tests__` directory. This file contains an example of how to set up the axe DevTools Browser and Reporter APIs, test for accessibility, and generate formatted results.
 
-Once the sample project has been run, formatted results can be found in the `a11y-results` folder. The folder will contain the raw JSON results as well as the html, csv, and xml report formats. There will be one additional `html` file which is an executive summary report aggregating results from all scans into one page.
+Once the test suite has completed, formatted results can be found in the `a11y-results` folder. This will contain the raw JSON axe results as well as the html, csv, and xml report formats. There will be one additional `html` file which is an executive summary report aggregating results from all scans into one page.
 
 ## Modifying this project
 
