@@ -6,7 +6,7 @@
 
   <groupId>deque</groupId>
   <artifactId>hamcrest</artifactId>
-  <version>4.2.2</version>
+  <version>4.7.1</version>
 
   <repositories>
     <repository>
@@ -39,12 +39,12 @@
     <dependency>
       <groupId>com.deque.html.axe-devtools</groupId>
       <artifactId>hamcrest</artifactId>
-      <version>4.2.2</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.deque.html.axe-devtools</groupId>
       <artifactId>selenium</artifactId>
-      <version>4.2.2</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>

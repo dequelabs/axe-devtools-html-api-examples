@@ -58,7 +58,7 @@
         <dependency>
             <groupId>com.deque.html.axe-devtools</groupId>
             <artifactId>hamcrest</artifactId>
-            <version>4.4.0</version>
+            <version>4.7.1</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>

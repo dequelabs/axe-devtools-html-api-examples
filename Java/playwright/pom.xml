@@ -6,7 +6,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>playwright</artifactId>
-  <version>4.2.2</version>
+  <version>4.7.1</version>
   <repositories>
     <repository>
       <id>deque</id>
@@ -49,7 +49,7 @@
     <dependency>
       <groupId>com.deque.html.axe-devtools</groupId>
       <artifactId>playwright</artifactId>
-      <version>4.4.0</version>
+      <version>4.7.1</version>
     </dependency>
   </dependencies>
 
