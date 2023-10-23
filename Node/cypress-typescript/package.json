@@ -1,0 +1,16 @@
+{
+  "name": "cypress-typescript",
+  "version": "1.0.0",
+  "description": "Simple example TypeScript project with @axe-devtools/Cypress",
+  "scripts": {
+    "test": "cypress run --headed --browser chrome",
+    "cy:open": "cypress open"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@axe-devtools/cypress": "^4.7.2",
+    "@axe-devtools/reporter": "^4.7.0",
+    "cypress": "^13.3.2",
+    "typescript": "^5.2.2"
+  }
+}
