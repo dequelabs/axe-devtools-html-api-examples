@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem 'webdrivers', '~> 5.0', require: false
+gem 'webdrivers', '~> 5.3', require: false
 gem "axe-devtools-selenium", '~> 4.4.0', :source => 'https://agora.dequecloud.com/artifactory/api/gems/devtools-gems'
 gem 'selenium-webdriver', '~> 4.3'
 gem "axe-devtools-rspec", '~> 4.4.0', :source => 'https://agora.dequecloud.com/artifactory/api/gems/devtools-gems'
