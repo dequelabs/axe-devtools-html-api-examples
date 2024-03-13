@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "preinstall": "axe-devtools-install playwright reporter",
         "codeceptjs": "rimraf ./a11y-results && codeceptjs run --steps",
         "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
         "codeceptjs:ui": "codecept-ui --app",
@@ -24,8 +25,6 @@
         "@codeceptjs/ui": "^0.4.7",
         "codeceptjs": "^3.3.5",
         "playwright": "^1.25.0",
-        "@axe-devtools/playwright": "^4.4.2",
-        "@axe-devtools/reporter": "^4.4.0",
         "rimraf": "^3.0.2"
     }
 }

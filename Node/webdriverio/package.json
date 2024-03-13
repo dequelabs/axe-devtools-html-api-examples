@@ -6,6 +6,7 @@
   "author": "jonathan.thickens@deque.com",
   "license": "ISC",
   "scripts": {
+    "preinstall": "axe-devtools-install webdriverio reporter",
     "test": "rimraf ./a11y-results && wdio run ./wdio.conf.js"
   },
   "devDependencies": {
@@ -18,9 +19,5 @@
     "rimraf": "^3.0.2",
     "wdio-chromedriver-service": "^6.0.4",
     "webdriverio": "^6.11.3"
-  },
-  "dependencies": {
-    "@axe-devtools/reporter": "^4.4.0",
-    "@axe-devtools/webdriverio": "^4.4.0"
   }
 }

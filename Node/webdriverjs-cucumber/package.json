@@ -4,6 +4,7 @@
   "description": "Example project integrating webdriverjs-cucumber with axedevtools-api to help find the a11y issues",
   "main": "index.js",
   "scripts": {
+    "preinstall": "axe-devtools-install webdriverjs reporter",
     "test": "rimraf ./a11y-results && cucumber-js"
   },
   "author": "Ankit Kathal",
@@ -12,8 +13,6 @@
   "devDependencies": {
     "cucumber": "^6.0.7",
     "selenium-webdriver": "^4.4.0",
-    "@axe-devtools/reporter": "^4.4.0",
-    "@axe-devtools/webdriverjs": "^4.4.1",
     "rimraf": "^3.0.2"
   }
 }

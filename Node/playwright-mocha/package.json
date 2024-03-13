@@ -7,8 +7,6 @@
     "url": "http://deque.com"
   },
   "dependencies": {
-    "@axe-devtools/playwright": "^4.4.0",
-    "@axe-devtools/reporter": "^4.4.0",
     "axe-core": "^4.4.1",
     "chai": "^4.2.0",
     "dotenv": "^8.2.0",
@@ -17,6 +15,7 @@
     "rimraf": "^3.0.2"
   },
   "scripts": {
+    "preinstall": "axe-devtools-install playwright reporter",
     "test": "rimraf ./a11y-results && mocha ./_tests_/site-flow-a11y.js --timeout 60000 --exit"
   }
 }

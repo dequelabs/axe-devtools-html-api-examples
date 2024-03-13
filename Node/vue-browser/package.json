@@ -4,6 +4,7 @@
   "private": true,
   "description": "This example project uses `@axe-devtools/reporter`and `@axe-devtools/browser`. See `README` to learn more.",
   "scripts": {
+    "preinstall": "axe-devtools-install browser reporter",
     "test": "rimraf ./a11y-results/ && jest"
   },
   "author": "Ankit Kathal",
@@ -11,8 +12,6 @@
     "vue - browser - axe-devtools-api"
   ],
   "devDependencies": {
-    "@axe-devtools/browser": "^4.4.1",
-    "@axe-devtools/reporter": "^4.4.0",
     "@types/jest": "^27.0.1",
     "@types/rimraf": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
