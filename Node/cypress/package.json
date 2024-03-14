@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@axe-devtools/cypress": "4.4.0",
-    "@axe-devtools/reporter": "4.4.0",
-    "cypress": "^6.1.0"
+    "@axe-devtools/reporter": "4.4.0"
+  },
+  "devDependencies": {
+    "cypress": "^9.7.0"
   }
 }

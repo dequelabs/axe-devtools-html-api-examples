@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import com.deque.html.axecore.results.Results;
 import com.deque.html.axedevtools.selenium.*;
@@ -20,15 +21,16 @@ public class exampleTest {
   private static AxeDriver axedriver = null;
   private static AxeSelenium axeSelenium = null;
 
-  @BeforeClass
-  public static void initiate_drivers() {
+@BeforeClass
+public static void initiate_drivers() {
     _reportOptions = new AxeReportingOptions();
-    WebDriverManager.chromedriver().setup();
-    driver = new ChromeDriver();
+    WebDriverManager.edgedriver().setup();
+    driver = new EdgeDriver();  
     axedriver = new AxeDriver(driver);
     axeSelenium = new AxeSelenium();
     AxeConfiguration.configure().testSuiteName("Test").outputDirectory("axe-json-reports/");
-  }
+}
+
 
   @Test
   public void test_a11y_workshop_homepage() {
@@ -52,7 +54,7 @@ public class exampleTest {
   @AfterClass
   public static void reporting() throws IOException {
     Runtime rt = Runtime.getRuntime();
-    String reporter = new File("src/test/resources/reporter-cli-macos").getAbsolutePath();
+    String reporter = new File("src/test/resources/reporter.exe").getAbsolutePath();
     String Logger = new File("axe-json-reports/").getAbsolutePath();
     String Destination = new File("a11y-results/").getAbsolutePath();
     String command_xml =

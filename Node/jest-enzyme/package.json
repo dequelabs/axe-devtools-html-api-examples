@@ -22,5 +22,8 @@
     "setupFilesAfterEnv": [
       "<rootDir>/jest.setup.js"
     ]
+  },
+  "dependencies": {
+    "canvas": "^2.11.2"
   }
 }
