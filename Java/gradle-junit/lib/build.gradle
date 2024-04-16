@@ -37,7 +37,7 @@ dependencies {
     implementation 'com.google.guava:guava:31.0.1-jre'
 
     //This dependency is used for axedevtools integration
-    implementation 'com.deque.html.axe-devtools:selenium:4.7.1'
+    implementation 'com.deque.html.axe-devtools:selenium:4.9.0'
 
     //This dependency is used for selenium testing framework.
     implementation 'org.seleniumhq.selenium:selenium-java:4.4.0'

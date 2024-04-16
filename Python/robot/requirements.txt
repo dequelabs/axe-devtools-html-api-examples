@@ -1,9 +1,9 @@
 appdirs==1.4.4
 async-generator==1.10
 attrs==21.4.0
-axe-devtools-api==4.4.0
-axe-devtools-robot==4.4.0
-axe-devtools-selenium==4.4.0
+axe-devtools-api==4.9.0
+axe-devtools-robot==4.9.0
+axe-devtools-selenium==4.9.0
 beautifulsoup4==4.11.1
 certifi==2022.6.15
 cffi==1.15.0

@@ -8,8 +8,8 @@
   },
   "license": "UNLICENSED",
   "devDependencies": {
-    "@axe-devtools/cypress": "^4.7.2",
-    "@axe-devtools/reporter": "^4.7.0",
+    "@axe-devtools/cypress": "^4.9.0",
+    "@axe-devtools/reporter": "^4.8.0",
     "cypress": "^13.3.2",
     "typescript": "^5.2.2"
   }

@@ -33,7 +33,7 @@ dependencies {
     testImplementation(platform("io.cucumber:cucumber-bom:7.13.0"))
     testImplementation 'org.junit.vintage:junit-vintage-engine:5.7.2'
 
-    implementation 'com.deque.html.axe-devtools:cucumber:4.7.1'
+    implementation 'com.deque.html.axe-devtools:cucumber:4.9.0'
 
     //This dependency is used for downloading the respective webdrivers like chromedriver geckodriver etc.
     implementation 'io.github.bonigarcia:webdrivermanager:5.5.0'
