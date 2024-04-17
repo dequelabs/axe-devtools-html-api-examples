@@ -20,7 +20,7 @@
     "webdriverio": "^6.11.3"
   },
   "dependencies": {
-    "@axe-devtools/reporter": "^4.4.0",
+    "@axe-devtools/reporter": "^4.8.0",
     "@axe-devtools/webdriverio": "^4.4.0"
   }
 }

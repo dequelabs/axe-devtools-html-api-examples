@@ -24,8 +24,8 @@
         "@codeceptjs/ui": "^0.4.7",
         "codeceptjs": "^3.3.5",
         "playwright": "^1.25.0",
-        "@axe-devtools/playwright": "^4.4.2",
-        "@axe-devtools/reporter": "^4.4.0",
+        "@axe-devtools/playwright": "^4.9.0",
+        "@axe-devtools/reporter": "^4.8.0",
         "rimraf": "^3.0.2"
     }
 }

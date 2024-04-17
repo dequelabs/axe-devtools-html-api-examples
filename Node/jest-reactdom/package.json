@@ -6,8 +6,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@axe-devtools/browser": "^4.4.1",
-    "@axe-devtools/reporter": "^4.4.0",
+    "@axe-devtools/browser": "^4.9.0",
+    "@axe-devtools/reporter": "^4.8.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "jest": "^27.5.1",

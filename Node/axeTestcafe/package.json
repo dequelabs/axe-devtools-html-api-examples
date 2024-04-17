@@ -9,7 +9,7 @@
   "author": "Mark Steadman",
   "license": "ISC",
   "devDependencies": {
-    "@axe-devtools/reporter": "^4.5.1",
+    "@axe-devtools/reporter": "^4.8.0",
     "axe-core": "4.6.1",
     "bin-v8-flags-filter": "^1.2.0",
     "elegant-spinner": "^2.0.0",
@@ -20,6 +20,6 @@
     "testcafe": "2.5.0"
   },
   "dependencies": {
-    "@axe-devtools/script-builder": "^4.6.1"
+    "@axe-devtools/script-builder": "^4.9.0"
   }
 }

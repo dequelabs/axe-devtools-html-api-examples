@@ -13,8 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.21.1",
-    "@axe-devtools/playwright": "^4.4.1",
-    "@axe-devtools/reporter": "^4.4.0",
+    "@axe-devtools/playwright": "^4.9.0",
+    "@axe-devtools/reporter": "^4.8.0",
     "rimraf": "^3.0.2"
   }
 }

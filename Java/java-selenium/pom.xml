@@ -38,7 +38,7 @@
     <dependency>
       <groupId>com.deque.html.axe-devtools</groupId>
       <artifactId>selenium</artifactId>
-      <version>4.7.1</version>
+      <version>4.9.0</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>

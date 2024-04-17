@@ -12,8 +12,8 @@
   "author": "Ankit Kathal",
   "license": "ISC",
   "devDependencies": {
-    "@axe-devtools/puppeteer": "^4.4.1",
-    "@axe-devtools/reporter": "^4.4.0",
+    "@axe-devtools/puppeteer": "^4.9.0",
+    "@axe-devtools/reporter": "^4.8.0",
     "puppeteer": "^13.7.0",
     "rimraf": "^3.0.2"
   }

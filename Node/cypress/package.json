@@ -9,8 +9,8 @@
     "test": "cypress open"
   },
   "dependencies": {
-    "@axe-devtools/cypress": "4.4.0",
-    "@axe-devtools/reporter": "4.4.0",
+    "@axe-devtools/cypress": "4.9.0",
+    "@axe-devtools/reporter": "4.8.0",
     "cypress": "^6.1.0"
   }
 }

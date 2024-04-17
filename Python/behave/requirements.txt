@@ -1,8 +1,8 @@
 async-generator==1.10
 attrs==21.4.0
-axe-devtools-api==4.4.0
-axe-devtools-behave==4.4.0
-axe-devtools-selenium==4.4.0
+axe-devtools-api==4.9.0
+axe-devtools-behave==4.9.0
+axe-devtools-selenium==4.9.0
 behave==1.2.6
 behave-webdriver==0.3.1
 certifi==2022.6.15

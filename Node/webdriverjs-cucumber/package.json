@@ -12,8 +12,8 @@
   "devDependencies": {
     "cucumber": "^6.0.7",
     "selenium-webdriver": "^4.4.0",
-    "@axe-devtools/reporter": "^4.4.0",
-    "@axe-devtools/webdriverjs": "^4.4.1",
+    "@axe-devtools/reporter": "^4.8.0",
+    "@axe-devtools/webdriverjs": "^4.9.0",
     "rimraf": "^3.0.2"
   }
 }

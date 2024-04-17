@@ -11,8 +11,8 @@
     "vue - browser - axe-devtools-api"
   ],
   "devDependencies": {
-    "@axe-devtools/browser": "^4.4.1",
-    "@axe-devtools/reporter": "^4.4.0",
+    "@axe-devtools/browser": "^4.9.0",
+    "@axe-devtools/reporter": "^4.8.0",
     "@types/jest": "^27.0.1",
     "@types/rimraf": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
