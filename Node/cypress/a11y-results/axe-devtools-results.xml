@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites >
+<testsuite name="@axe-devtools-cypress.cart" package="@axe-devtools-cypress" timestamp="2023-11-06T15:08:55.570Z">
+<properties >
+<property name="testSubject.fileName" value="http://abcdcomputech.dequecloud.com/cart.php" />
+</properties>
+<testcase name="color-contrast">
+<failure message="Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=cypress" impact="serious">
+http://abcdcomputech.dequecloud.com/cart.phpCSS Path: <![CDATA[#header > .fl_left > p]]>
+HTML: <![CDATA[<p>Gefälscht CompuTech</p>]]>
+
+ --------
+
+CSS Path: <![CDATA[#topbar > .fl_left > p]]>
+HTML: <![CDATA[<p>Tel: 703-555-1212 | Mail: info@deque.com</p>]]>
+
+ --------
+
+CSS Path: <![CDATA[#container > h2]]>
+HTML: <![CDATA[<h2>Shopping Cart</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.header > td:nth-child(1)]]>
+HTML: <![CDATA[<td>Item</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[.header > td:nth-child(2)]]>
+HTML: <![CDATA[<td>Quantity</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[.header > td:nth-child(3)]]>
+HTML: <![CDATA[<td>Price</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(2) > td:nth-child(1) > table > tbody > tr > td:nth-child(2)]]>
+HTML: <![CDATA[<td><strong>Fregatte 17</strong> We had so many superlatives lined up to describe this classically-styled, ultra portable, budget-friendly, high performance machine that we couldn't contain ourselves.</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(2) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > strong]]>
+HTML: <![CDATA[<strong>Fregatte 17</strong>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(2) > td:nth-child(3)]]>
+HTML: <![CDATA[<td>$1234.56</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(1) > table > tbody > tr > td:nth-child(2)]]>
+HTML: <![CDATA[<td><strong>Beschissen 750</strong> You wanted a business minded PC at a home user price and we've given it to you.  There's no tedium quite like cube-farm tedium and this is the business class PC made for just such a purpose.</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > strong]]>
+HTML: <![CDATA[<strong>Beschissen 750</strong>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(3)]]>
+HTML: <![CDATA[<td>$1234.56</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2)]]>
+HTML: <![CDATA[<td><strong>Verrottet 875</strong> Share all your photos and home videos with all your friends, relatives, co-workers, and passersby with built-in photo and video software preinstalled.</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > strong]]>
+HTML: <![CDATA[<strong>Verrottet 875</strong>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(4) > td:nth-child(3)]]>
+HTML: <![CDATA[<td>$1234.56</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td[colspan="3"]]]>
+HTML: <![CDATA[<td colspan="3" style="text-align: right;"><strong>Subtotal: </strong>$3703.68</td>]]>
+
+ --------
+
+CSS Path: <![CDATA[td[colspan="3"] > strong]]>
+HTML: <![CDATA[<strong>Subtotal: </strong>]]>
+
+ --------
+
+CSS Path: <![CDATA[.footbox:nth-child(1) > h2]]>
+HTML: <![CDATA[<h2>Laptops &amp; Notebooks</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.footbox:nth-child(2) > h2]]>
+HTML: <![CDATA[<h2>Desktops</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.footbox:nth-child(3) > h2]]>
+HTML: <![CDATA[<h2>Test Course Materials</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.footbox:nth-child(4) > h2]]>
+HTML: <![CDATA[<h2>Cart</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.last.footbox > h2]]>
+HTML: <![CDATA[<h2>Support</h2>]]>
+</failure>
+</testcase>
+<testcase name="image-alt">
+<failure message="Ensures &lt;img&gt; elements have alternate text or a role of none or presentation
+https://dequeuniversity.com/rules/axe/4.7/image-alt?application=cypress" impact="critical">
+http://abcdcomputech.dequecloud.com/cart.phpCSS Path: <![CDATA[img[src$="small174-3.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small174-3.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small174-2.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small174-2.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small174-1.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small174-1.jpg">]]>
+</failure>
+</testcase>
+<testcase name="label">
+<failure message="Ensures every form element has a label
+https://dequeuniversity.com/rules/axe/4.7/label?application=cypress" impact="critical">
+http://abcdcomputech.dequecloud.com/cart.phpCSS Path: <![CDATA[input[type="text"]]]>
+HTML: <![CDATA[<input type="text" name="q" value="Search the site…" onfocus="this.value=(this.value=='Search the site…')? '' : this.value ;">]]>
+</failure>
+</testcase>
+<testcase name="aria-hidden-body" />
+<testcase name="avoid-inline-spacing" />
+<testcase name="bypass" />
+<testcase name="color-contrast" />
+<testcase name="document-title" />
+<testcase name="duplicate-id-active" />
+<testcase name="duplicate-id" />
+<testcase name="form-field-multiple-labels" />
+<testcase name="html-has-lang" />
+<testcase name="html-lang-valid" />
+<testcase name="input-button-name" />
+<testcase name="link-in-text-block" />
+<testcase name="link-name" />
+<testcase name="list" />
+<testcase name="listitem" />
+<testcase name="nested-interactive" />
+<testcase name="td-headers-attr" />
+</testsuite>
+<testsuite name="@axe-devtools-cypress.home" package="@axe-devtools-cypress" timestamp="2023-11-06T15:08:55.836Z">
+<properties >
+<property name="testSubject.fileName" value="http://abcdcomputech.dequecloud.com/" />
+</properties>
+<testcase name="color-contrast">
+<failure message="Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=cypress" impact="serious">
+http://abcdcomputech.dequecloud.com/CSS Path: <![CDATA[#header > .fl_left > p]]>
+HTML: <![CDATA[<p>Gefälscht CompuTech</p>]]>
+
+ --------
+
+CSS Path: <![CDATA[#topbar > .fl_left > p]]>
+HTML: <![CDATA[<p>Tel: 703-555-1212 | Mail: info@deque.com</p>]]>
+
+ --------
+
+CSS Path: <![CDATA[li:nth-child(1) > h2]]>
+HTML: <![CDATA[<h2>Parts and Supplies</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[li:nth-child(1) > p:nth-child(3)]]>
+HTML: <![CDATA[<p>We sell parts and supplies for every computer we sell and even some that we don't.  If we don't have a part, it doesn't exist. If it does exist and we don't have it, we'll get it.  If we can't get it, we'll steal it. That's how we roll.</p>]]>
+
+ --------
+
+CSS Path: <![CDATA[li:nth-child(2) > h2]]>
+HTML: <![CDATA[<h2>Visit our Brick &amp; Mortar Store</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[li:nth-child(2) > p:nth-child(3)]]>
+HTML: <![CDATA[<p>]]>
+
+ --------
+
+CSS Path: <![CDATA[ul > .last > h2]]>
+HTML: <![CDATA[<h2>In Home Computer Service</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.last > p:nth-child(3)]]>
+HTML: <![CDATA[<p>You don't like our place?  Then we'll come to your place. We can fix your stuff in your home for a sizeable surcharge. We'll get there at a time that is incredibly inconvenient to you and come unprepared for the task at hand. You'll tell all your friends what great service you received!</p>]]>
+
+ --------
+
+CSS Path: <![CDATA[.footbox:nth-child(1) > h2]]>
+HTML: <![CDATA[<h2>Laptops &amp; Notebooks</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.footbox:nth-child(2) > h2]]>
+HTML: <![CDATA[<h2>Desktops</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.footbox:nth-child(3) > h2]]>
+HTML: <![CDATA[<h2>Test Course Materials</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.footbox:nth-child(4) > h2]]>
+HTML: <![CDATA[<h2>Cart</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.last.footbox > h2]]>
+HTML: <![CDATA[<h2>Support</h2>]]>
+</failure>
+</testcase>
+<testcase name="image-alt">
+<failure message="Ensures &lt;img&gt; elements have alternate text or a role of none or presentation
+https://dequeuniversity.com/rules/axe/4.7/image-alt?application=cypress" impact="critical">
+http://abcdcomputech.dequecloud.com/CSS Path: <![CDATA[img[src$="small60-1.jpg"]]]>
+HTML: <![CDATA[<img class="imgl" src="images/site/small60-1.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small60-2.jpg"]]]>
+HTML: <![CDATA[<img class="imgl" src="images/site/small60-2.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small60-3.jpg"]]]>
+HTML: <![CDATA[<img class="imgl" src="images/site/small60-3.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small174-1.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small174-1.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small174-2.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small174-2.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small174-3.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small174-3.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small174-4.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small174-4.jpg" "="">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small174-5.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small174-5.jpg">]]>
+</failure>
+</testcase>
+<testcase name="label">
+<failure message="Ensures every form element has a label
+https://dequeuniversity.com/rules/axe/4.7/label?application=cypress" impact="critical">
+http://abcdcomputech.dequecloud.com/CSS Path: <![CDATA[input[type="text"]]]>
+HTML: <![CDATA[<input type="text" name="q" value="Search the site…" onfocus="this.value=(this.value=='Search the site…')? '' : this.value ;">]]>
+</failure>
+</testcase>
+<testcase name="link-in-text-block">
+<failure message="Ensure links are distinguished from surrounding text in a way that does not rely on color
+https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=cypress" impact="serious">
+http://abcdcomputech.dequecloud.com/CSS Path: <![CDATA[a[href$="www.deque.com"]]]>
+HTML: <![CDATA[<a href="http://www.deque.com" target="_blank">contact Deque Systems</a>]]>
+
+ --------
+
+CSS Path: <![CDATA[p:nth-child(3) > a[href$="contact.php"]]]>
+HTML: <![CDATA[<a href="contact.php">this page</a>]]>
+</failure>
+</testcase>
+<testcase name="link-name">
+<failure message="Ensures links have discernible text
+https://dequeuniversity.com/rules/axe/4.7/link-name?application=cypress" impact="serious">
+http://abcdcomputech.dequecloud.com/CSS Path: <![CDATA[li:nth-child(1) > a[href$="desktops.php"]]]>
+HTML: <![CDATA[<a href="desktops.php"><img src="images/site/small174-1.jpg"></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[li:nth-child(2) > a[href$="desktops.php"]]]>
+HTML: <![CDATA[<a href="desktops.php"><img src="images/site/small174-2.jpg"></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[li:nth-child(3) > a[href$="laptopsandnotebooks.php"]]]>
+HTML: <![CDATA[<a href="laptopsandnotebooks.php"><img src="images/site/small174-3.jpg"></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[li:nth-child(4) > a[href$="laptopsandnotebooks.php"]]]>
+HTML: <![CDATA[<a href="laptopsandnotebooks.php"><img src="images/site/small174-4.jpg" "=""></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[.last > a[href$="laptopsandnotebooks.php"]]]>
+HTML: <![CDATA[<a href="laptopsandnotebooks.php"><img src="images/site/small174-5.jpg"></a>]]>
+</failure>
+</testcase>
+<testcase name="aria-hidden-body" />
+<testcase name="bypass" />
+<testcase name="color-contrast" />
+<testcase name="document-title" />
+<testcase name="duplicate-id-active" />
+<testcase name="duplicate-id" />
+<testcase name="form-field-multiple-labels" />
+<testcase name="html-has-lang" />
+<testcase name="html-lang-valid" />
+<testcase name="image-alt" />
+<testcase name="input-button-name" />
+<testcase name="link-in-text-block" />
+<testcase name="link-name" />
+<testcase name="list" />
+<testcase name="listitem" />
+<testcase name="nested-interactive" />
+</testsuite>
+<testsuite name="@axe-devtools-cypress.computers" package="@axe-devtools-cypress" timestamp="2023-11-06T15:08:56.126Z">
+<properties >
+<property name="testSubject.fileName" value="http://abcdcomputech.dequecloud.com/laptopsandnotebooks.php" />
+</properties>
+<testcase name="color-contrast">
+<failure message="Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=cypress" impact="serious">
+http://abcdcomputech.dequecloud.com/laptopsandnotebooks.phpCSS Path: <![CDATA[#content > h1]]>
+HTML: <![CDATA[<h1>Laptops &amp; Notebooks</h1>]]>
+
+ --------
+
+CSS Path: <![CDATA[#content > p]]>
+HTML: <![CDATA[<p>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(1) > td:nth-child(2) > p:nth-child(1) > strong]]>
+HTML: <![CDATA[<strong>Fregatte 17</strong>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(1) > td:nth-child(2) > p:nth-child(2)]]>
+HTML: <![CDATA[<p>We had so many superlatives lined up to describe this classically-styled, ultra portable, budget-friendly, high performance machine that we couldn't contain ourselves. </p>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(1)]]>
+HTML: <![CDATA[<li>Genuine Windows 7 Home Premium 64-bit</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(2)]]>
+HTML: <![CDATA[<li>3GB DDR3 System Memory </li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(3)]]>
+HTML: <![CDATA[<li> 500GB 5400RPM Hard Drive</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(4)]]>
+HTML: <![CDATA[<li>802.11b/g/n WLAN</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(5)]]>
+HTML: <![CDATA[<li>Intel(R) Pentium(R) B950 Processor </li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(6)]]>
+HTML: <![CDATA[<li> Up to 5.50 hours of battery life</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > p:nth-child(1) > strong]]>
+HTML: <![CDATA[<strong>Abgenutzt 15</strong>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > p:nth-child(2)]]>
+HTML: <![CDATA[<p>Power and portability all in one. The battery on this one almost lasts long enough for it to be useful as a laptop but believe us, you'll be tethered to a power cord like an astronaut on a space walk.</p>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(1)]]>
+HTML: <![CDATA[<li> Genuine Windows 7 Home Premium 64-bit</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(2)]]>
+HTML: <![CDATA[<li> Intel Core i3-370M + Intel(R) HD Graphics</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(3)]]>
+HTML: <![CDATA[<li> 4GB DDR3 System Memory</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(4)]]>
+HTML: <![CDATA[<li> 500GB 5400RPM Hard Drive</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(5)]]>
+HTML: <![CDATA[<li> Webcam with Integrated Digital Microphone</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(6)]]>
+HTML: <![CDATA[<li> 802.11b/g/n WLAN</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(7)]]>
+HTML: <![CDATA[<li> Up to 4.25 hours of battery life </li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > p:nth-child(1) > strong]]>
+HTML: <![CDATA[<strong>Backstein 21</strong>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > p:nth-child(2)]]>
+HTML: <![CDATA[<p>Look at this little thing, ain't it cute?  All small and portable with its tiny screen you can barely read
+            and keyboard so small your fingers cramp when using it, you'll wonder why you didn't get a bigger computer.</p>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(1)]]>
+HTML: <![CDATA[<li> Genuine Windows 7 Home Premium 64-bit</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(2)]]>
+HTML: <![CDATA[<li> 2nd generation Intel(R) Core(TM) i3-2330M </li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(3)]]>
+HTML: <![CDATA[<li> 4GB DDR3 System Memory </li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(4)]]>
+HTML: <![CDATA[<li> 640GB 5400RPM Hard Drive</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(5)]]>
+HTML: <![CDATA[<li> Webcam with Integrated Digital Microphone</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(6)]]>
+HTML: <![CDATA[<li> 802.11b/g/n WLAN</li>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(7)]]>
+HTML: <![CDATA[<li> Up to 4.25 hours of battery life </li>]]>
+
+ --------
+
+CSS Path: <![CDATA[.title]]>
+HTML: <![CDATA[<h2 class="title"><img src="images/site/small60-2.jpg" width="60" height="60">Our Location. Let us show it to you</h2>]]>
+
+ --------
+
+CSS Path: <![CDATA[.holder > p:nth-child(2)]]>
+HTML: <![CDATA[<p>Our opulently appointed corporate offices are located in the finest strip mall within miles. We think you'll agree that our place is the place among places when you think of a place that does our sort of thing. </p>]]>
+</failure>
+</testcase>
+<testcase name="image-alt">
+<failure message="Ensures &lt;img&gt; elements have alternate text or a role of none or presentation
+https://dequeuniversity.com/rules/axe/4.7/image-alt?application=cypress" impact="critical">
+http://abcdcomputech.dequecloud.com/laptopsandnotebooks.phpCSS Path: <![CDATA[.imgr]]>
+HTML: <![CDATA[<img class="imgr" src="images/site/laptop125x125.jpg" width="125" height="125">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="laptop250-1.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/laptop250-1.jpg" class="listingImg">]]>
+
+ --------
+
+CSS Path: <![CDATA[a[href$="laptop1.php"] > img]]>
+HTML: <![CDATA[<img src="images/site/learnMoreButton.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(2) > .addToCart[colspan="2"] > a[href="cart.php?added=1"] > img]]>
+HTML: <![CDATA[<img src="images/site/addToCartButton.gif">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="laptop250-2.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/laptop250-2.jpg" class="listingImg">]]>
+
+ --------
+
+CSS Path: <![CDATA[a[href$="laptop2.php"] > img]]>
+HTML: <![CDATA[<img src="images/site/learnMoreButton.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(4) > .addToCart[colspan="2"] > a[href="cart.php?added=1"] > img]]>
+HTML: <![CDATA[<img src="images/site/addToCartButton.gif">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="laptop250-3.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/laptop250-3.jpg" class="listingImg">]]>
+
+ --------
+
+CSS Path: <![CDATA[a[href$="laptop3.php"] > img]]>
+HTML: <![CDATA[<img src="images/site/learnMoreButton.jpg">]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(6) > .addToCart[colspan="2"] > a[href="cart.php?added=1"] > img]]>
+HTML: <![CDATA[<img src="images/site/addToCartButton.gif">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="small60-2.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/small60-2.jpg" width="60" height="60">]]>
+
+ --------
+
+CSS Path: <![CDATA[img[src$="motherboard240.jpg"]]]>
+HTML: <![CDATA[<img src="images/site/motherboard240.jpg" width="240" height="90">]]>
+</failure>
+</testcase>
+<testcase name="link-in-text-block">
+<failure message="Ensure links are distinguished from surrounding text in a way that does not rely on color
+https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=cypress" impact="serious">
+http://abcdcomputech.dequecloud.com/laptopsandnotebooks.phpCSS Path: <![CDATA[#content > p > a]]>
+HTML: <![CDATA[<a href="http://en.wikipedia.org/wiki/Laptop">Wikipedia</a>]]>
+</failure>
+</testcase>
+<testcase name="link-name">
+<failure message="Ensures links have discernible text
+https://dequeuniversity.com/rules/axe/4.7/link-name?application=cypress" impact="serious">
+http://abcdcomputech.dequecloud.com/laptopsandnotebooks.phpCSS Path: <![CDATA[.addToCart[colspan="2"] > a[href$="laptop1.php"]]]>
+HTML: <![CDATA[<a href="laptop1.php"><img src="images/site/learnMoreButton.jpg"></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(2) > .addToCart[colspan="2"] > a[href="cart.php?added=1"]]]>
+HTML: <![CDATA[<a href="cart.php?added=1"><img src="images/site/addToCartButton.gif"></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[.addToCart[colspan="2"] > a[href$="laptop2.php"]]]>
+HTML: <![CDATA[<a href="laptop2.php"><img src="images/site/learnMoreButton.jpg"></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(4) > .addToCart[colspan="2"] > a[href="cart.php?added=1"]]]>
+HTML: <![CDATA[<a href="cart.php?added=1"><img src="images/site/addToCartButton.gif"></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[.addToCart[colspan="2"] > a[href$="laptop3.php"]]]>
+HTML: <![CDATA[<a href="laptop3.php"><img src="images/site/learnMoreButton.jpg"></a>]]>
+
+ --------
+
+CSS Path: <![CDATA[tr:nth-child(6) > .addToCart[colspan="2"] > a[href="cart.php?added=1"]]]>
+HTML: <![CDATA[<a href="cart.php?added=1"><img src="images/site/addToCartButton.gif"></a>]]>
+</failure>
+</testcase>
+<testcase name="color-contrast" />
+<testcase name="duplicate-id" />
+<testcase name="link-name" />
+<testcase name="list" />
+<testcase name="listitem" />
+<testcase name="nested-interactive" />
+<testcase name="td-headers-attr" />
+</testsuite>
+</testsuites>

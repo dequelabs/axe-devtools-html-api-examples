@@ -1,0 +1,4205 @@
+{
+  "endTime": "2024-01-08T15:53:44.980Z",
+  "findings": {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.7.2"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.7.0 Chrome/100.0.4896.75 Electron/18.0.4 Safari/537.36",
+      "windowWidth": 1000,
+      "windowHeight": 660,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2024-01-08T15:53:44.980Z",
+    "url": "http://abcdcomputech.dequecloud.com/laptopsandnotebooks.php",
+    "toolOptions": {
+      "reporter": "v1"
+    },
+    "inapplicable": [
+      {
+        "id": "area-alt",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag244",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT6.a"
+        ],
+        "description": "Ensures <area> elements of image maps have alternate text",
+        "help": "Active <area> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/area-alt?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-allowed-attr",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ],
+        "description": "Ensures ARIA attributes are allowed for an element's role",
+        "help": "Elements must only use allowed ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-allowed-attr?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-command-name",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "ACT",
+          "TTv5",
+          "TT6.a"
+        ],
+        "description": "Ensures every ARIA button, link and menuitem has an accessible name",
+        "help": "ARIA commands must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-command-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-hidden-body",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ],
+        "description": "Ensures aria-hidden='true' is not present on the document body.",
+        "help": "aria-hidden='true' must not be present on the document body",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-hidden-body?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-hidden-focus",
+        "impact": null,
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a"
+        ],
+        "description": "Ensures aria-hidden elements are not focusable nor contain focusable elements",
+        "help": "ARIA hidden element must not be focusable or contain focusable elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-hidden-focus?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-input-field-name",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "ACT",
+          "TTv5",
+          "TT5.c"
+        ],
+        "description": "Ensures every ARIA input field has an accessible name",
+        "help": "ARIA input fields must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-input-field-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-meter-name",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag111"
+        ],
+        "description": "Ensures every ARIA meter node has an accessible name",
+        "help": "ARIA meter nodes must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-meter-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-progressbar-name",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag111"
+        ],
+        "description": "Ensures every ARIA progressbar node has an accessible name",
+        "help": "ARIA progressbar nodes must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-progressbar-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-required-attr",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ],
+        "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+        "help": "Required ARIA attributes must be provided",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-attr?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-required-children",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ],
+        "description": "Ensures elements with an ARIA role that require child roles contain them",
+        "help": "Certain ARIA roles must contain particular children",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-children?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-required-parent",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ],
+        "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+        "help": "Certain ARIA roles must be contained by particular parents",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-parent?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-roledescription",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "deprecated"
+        ],
+        "description": "Ensure aria-roledescription is only used on elements with an implicit or explicit role",
+        "help": "aria-roledescription must be on elements with a semantic role",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-roledescription?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-roles",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ],
+        "description": "Ensures all elements with a role attribute use a valid value",
+        "help": "ARIA roles used must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-roles?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-toggle-field-name",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "ACT",
+          "TTv5",
+          "TT5.c"
+        ],
+        "description": "Ensures every ARIA toggle field has an accessible name",
+        "help": "ARIA toggle fields must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-toggle-field-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-tooltip-name",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ],
+        "description": "Ensures every ARIA tooltip node has an accessible name",
+        "help": "ARIA tooltip nodes must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-tooltip-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-valid-attr-value",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ],
+        "description": "Ensures all ARIA attributes have valid values",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-valid-attr-value?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "aria-valid-attr",
+        "impact": null,
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ],
+        "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+        "help": "ARIA attributes must conform to valid names",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-valid-attr?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "audio-caption",
+        "impact": null,
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag121",
+          "section508",
+          "section508.22.a",
+          "deprecated"
+        ],
+        "description": "Ensures <audio> elements have captions",
+        "help": "<audio> elements must have a captions track",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/audio-caption?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "autocomplete-valid",
+        "impact": null,
+        "tags": [
+          "cat.forms",
+          "wcag21aa",
+          "wcag135",
+          "ACT"
+        ],
+        "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+        "help": "autocomplete attribute must be used correctly",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/autocomplete-valid?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "avoid-inline-spacing",
+        "impact": null,
+        "tags": [
+          "cat.structure",
+          "wcag21aa",
+          "wcag1412",
+          "ACT"
+        ],
+        "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+        "help": "Inline text spacing must be adjustable with custom stylesheets",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/avoid-inline-spacing?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "blink",
+        "impact": null,
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag222",
+          "section508",
+          "section508.22.j",
+          "TTv5",
+          "TT2.b"
+        ],
+        "description": "Ensures <blink> elements are not used",
+        "help": "<blink> elements are deprecated and must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/blink?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "button-name",
+        "impact": null,
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT6.a"
+        ],
+        "description": "Ensures buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/button-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "definition-list",
+        "impact": null,
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ],
+        "description": "Ensures <dl> elements are structured correctly",
+        "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/definition-list?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "dlitem",
+        "impact": null,
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ],
+        "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
+        "help": "<dt> and <dd> elements must be contained by a <dl>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/dlitem?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "document-title",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag242",
+          "ACT",
+          "TTv5",
+          "TT12.a"
+        ],
+        "description": "Ensures each HTML document contains a non-empty <title> element",
+        "help": "Documents must have <title> element to aid in navigation",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/document-title?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "duplicate-id-active",
+        "impact": null,
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ],
+        "description": "Ensures every id attribute value of active elements is unique",
+        "help": "IDs of active elements must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-active?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "duplicate-id-aria",
+        "impact": null,
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ],
+        "description": "Ensures every id attribute value used in ARIA and in labels is unique",
+        "help": "IDs used in ARIA and labels must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "form-field-multiple-labels",
+        "impact": null,
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332",
+          "TTv5",
+          "TT5.c"
+        ],
+        "description": "Ensures form field does not have multiple label elements",
+        "help": "Form field must not have multiple label elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/form-field-multiple-labels?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "frame-focusable-content",
+        "impact": null,
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag211",
+          "TTv5",
+          "TT4.a"
+        ],
+        "description": "Ensures <frame> and <iframe> elements with focusable content do not have tabindex=-1",
+        "help": "Frames with focusable content must not have tabindex=-1",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-focusable-content?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "frame-title-unique",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag412",
+          "wcag2a",
+          "TTv5",
+          "TT12.d"
+        ],
+        "description": "Ensures <iframe> and <frame> elements contain a unique title attribute",
+        "help": "Frames must have a unique title attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-title-unique?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "frame-title",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.i",
+          "TTv5",
+          "TT12.d"
+        ],
+        "description": "Ensures <iframe> and <frame> elements have an accessible name",
+        "help": "Frames must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-title?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "html-has-lang",
+        "impact": null,
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311",
+          "ACT",
+          "TTv5",
+          "TT11.a"
+        ],
+        "description": "Ensures every HTML document has a lang attribute",
+        "help": "<html> element must have a lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-has-lang?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "html-lang-valid",
+        "impact": null,
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311",
+          "ACT",
+          "TTv5",
+          "TT11.a"
+        ],
+        "description": "Ensures the lang attribute of the <html> element has a valid value",
+        "help": "<html> element must have a valid value for the lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-lang-valid?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "html-xml-lang-mismatch",
+        "impact": null,
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311",
+          "ACT"
+        ],
+        "description": "Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page",
+        "help": "HTML elements with lang and xml:lang must have the same base language",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-xml-lang-mismatch?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "input-button-name",
+        "impact": null,
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT5.c"
+        ],
+        "description": "Ensures input buttons have discernible text",
+        "help": "Input buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-button-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "input-image-alt",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT7.a"
+        ],
+        "description": "Ensures <input type=\"image\"> elements have alternate text",
+        "help": "Image buttons must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-image-alt?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "label",
+        "impact": null,
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.n",
+          "ACT",
+          "TTv5",
+          "TT5.c"
+        ],
+        "description": "Ensures every form element has a label",
+        "help": "Form elements must have labels",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "marquee",
+        "impact": null,
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag222",
+          "TTv5",
+          "TT2.b"
+        ],
+        "description": "Ensures <marquee> elements are not used",
+        "help": "<marquee> elements are deprecated and must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/marquee?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "meta-refresh",
+        "impact": null,
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag221",
+          "TTv5",
+          "TT8.a"
+        ],
+        "description": "Ensures <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+        "help": "Delayed refresh under 20 hours must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-refresh?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "meta-viewport",
+        "impact": null,
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "wcag2aa",
+          "wcag144",
+          "ACT"
+        ],
+        "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+        "help": "Zooming and scaling must not be disabled",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "object-alt",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ],
+        "description": "Ensures <object> elements have alternate text",
+        "help": "<object> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/object-alt?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "role-img-alt",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT7.a"
+        ],
+        "description": "Ensures [role='img'] elements have alternate text",
+        "help": "[role='img'] elements must have an alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/role-img-alt?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": null,
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag211",
+          "TTv5",
+          "TT4.a"
+        ],
+        "description": "Ensure elements that have scrollable content are accessible by keyboard",
+        "help": "Scrollable region must have keyboard access",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "select-name",
+        "impact": null,
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.n",
+          "ACT",
+          "TTv5",
+          "TT5.c"
+        ],
+        "description": "Ensures select element has an accessible name",
+        "help": "Select element must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/select-name?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "server-side-image-map",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag211",
+          "section508",
+          "section508.22.f",
+          "TTv5",
+          "TT4.a"
+        ],
+        "description": "Ensures that server-side image maps are not used",
+        "help": "Server-side image maps must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/server-side-image-map?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "svg-img-alt",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT7.a"
+        ],
+        "description": "Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text",
+        "help": "<svg> elements with an img role must have an alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/svg-img-alt?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "valid-lang",
+        "impact": null,
+        "tags": [
+          "cat.language",
+          "wcag2aa",
+          "wcag312",
+          "ACT",
+          "TTv5",
+          "TT11.b"
+        ],
+        "description": "Ensures lang attributes have valid values",
+        "help": "lang attribute must have a valid value",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/valid-lang?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "video-caption",
+        "impact": null,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag122",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT17.a"
+        ],
+        "description": "Ensures <video> elements have captions",
+        "help": "<video> elements must have captions",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/video-caption?application=cypress",
+        "nodes": []
+      },
+      {
+        "id": "no-autoplay-audio",
+        "impact": null,
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag142",
+          "ACT",
+          "TTv5",
+          "TT2.a"
+        ],
+        "description": "Ensures <video> or <audio> elements do not autoplay audio for more than 3 seconds without a control mechanism to stop or mute the audio",
+        "help": "<video> or <audio> elements must not play automatically",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/no-autoplay-audio?application=cypress",
+        "nodes": []
+      }
+    ],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "ACT",
+          "TTv5",
+          "TT13.c"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#c80000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 6.07,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.07"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"http://en.wikipedia.org/wiki/Laptop\">Wikipedia</a>",
+            "target": [
+              "#content > p > a"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#666666",
+                  "bgColor": "#f9f9f9",
+                  "contrastRatio": 5.45,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.45"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Laptops &amp; Notebooks</h2>",
+            "target": [
+              ".subnav > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#c80000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 6.07,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.07"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"contact.php\">Continue Reading »</a>",
+            "target": [
+              ".readmore > a[href$=\"contact.php\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#666666",
+                  "bgColor": "#f9f9f9",
+                  "contrastRatio": 5.45,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.45"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Support</h2>",
+            "target": [
+              "li > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#666666",
+                  "bgColor": "#f9f9f9",
+                  "contrastRatio": 5.45,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.45"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>What the heck is that thing?  If you don't know, maybe you should leave the hardware installations to us.  We can install everything short of a carbureted Chevy 427 in your computer.</p>",
+            "target": [
+              "li > p:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#c80000",
+                  "bgColor": "#f9f9f9",
+                  "contrastRatio": 5.77,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.77"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"support.php\">Continue Reading »</a>",
+            "target": [
+              ".readmore > a[href$=\"support.php\"]"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "duplicate-id",
+        "impact": null,
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ],
+        "description": "Ensures every id attribute value is unique",
+        "help": "id attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "duplicate-id",
+                "data": "container",
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div id=\"container\">",
+            "target": [
+              "#container"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id",
+                "data": "content",
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div id=\"content\">",
+            "target": [
+              "#content"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id",
+                "data": "column",
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div id=\"column\">",
+            "target": [
+              "#column"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id",
+                "data": "featured",
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Document has no static elements that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div id=\"featured\">",
+            "target": [
+              "#featured"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "wcag244",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT6.a"
+        ],
+        "description": "Ensures links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-name?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"http://en.wikipedia.org/wiki/Laptop\">Wikipedia</a>",
+            "target": [
+              "#content > p > a"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"laptop1.php\">Fregatte 17</a>",
+            "target": [
+              ".subnav > ul > li:nth-child(1) > a[href$=\"laptop1.php\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"laptop2.php\">Abgenutzt 15</a>",
+            "target": [
+              ".subnav > ul > li:nth-child(2) > a[href$=\"laptop2.php\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"laptop3.php\">Backstein 21</a>",
+            "target": [
+              ".subnav > ul > li:nth-child(3) > a[href$=\"laptop3.php\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"contact.php\">Continue Reading »</a>",
+            "target": [
+              ".readmore > a[href$=\"contact.php\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"support.php\">Continue Reading »</a>",
+            "target": [
+              ".readmore > a[href$=\"support.php\"]"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": null,
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ],
+        "description": "Ensures that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/list?application=cypress",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
+            "html": "<ul>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
+            "html": "<ul>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
+            "html": "<ul>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
+            "html": "<ul>\n        <li><a href=\"laptop1.php\">Fregatte 17</a></li>\n        <li><a href=\"laptop2.php\">Abgenutzt 15</a></li>\n        <li><a href=\"laptop3.php\">Backstein 21</a></li>\n      </ul>",
+            "target": [
+              ".subnav > ul"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
+            "html": "<ul>",
+            "target": [
+              "#featured > ul"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "listitem",
+        "impact": null,
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ],
+        "description": "Ensures <li> elements are used semantically",
+        "help": "<li> elements must be contained in a <ul> or <ol>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/listitem?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Genuine Windows 7 Home Premium 64-bit</li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>3GB DDR3 System Memory </li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> 500GB 5400RPM Hard Drive</li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>802.11b/g/n WLAN</li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Intel(R) Pentium(R) B950 Processor </li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> Up to 5.50 hours of battery life</li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> Genuine Windows 7 Home Premium 64-bit</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> Intel Core i3-370M + Intel(R) HD Graphics</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> 4GB DDR3 System Memory</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> 500GB 5400RPM Hard Drive</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> Webcam with Integrated Digital Microphone</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> 802.11b/g/n WLAN</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> Up to 4.25 hours of battery life </li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(7)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> Genuine Windows 7 Home Premium 64-bit</li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> 2nd generation Intel(R) Core(TM) i3-2330M </li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> 4GB DDR3 System Memory </li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> 640GB 5400RPM Hard Drive</li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> Webcam with Integrated Digital Microphone</li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> 802.11b/g/n WLAN</li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li> Up to 4.25 hours of battery life </li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(7)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li><a href=\"laptop1.php\">Fregatte 17</a></li>",
+            "target": [
+              ".subnav > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li><a href=\"laptop2.php\">Abgenutzt 15</a></li>",
+            "target": [
+              ".subnav > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li><a href=\"laptop3.php\">Backstein 21</a></li>",
+            "target": [
+              ".subnav > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>",
+            "target": [
+              "#featured > ul > li"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "nested-interactive",
+        "impact": null,
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a"
+        ],
+        "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+        "help": "Interactive controls must not be nested",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/nested-interactive?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img class=\"imgr\" src=\"images/site/laptop125x125.jpg\" width=\"125\" height=\"125\">",
+            "target": [
+              ".imgr"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/laptop250-1.jpg\" class=\"listingImg\">",
+            "target": [
+              "img[src$=\"laptop250-1.jpg\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/learnMoreButton.jpg\">",
+            "target": [
+              "a[href$=\"laptop1.php\"] > img"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/addToCartButton.gif\">",
+            "target": [
+              "tr:nth-child(2) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"] > img"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/laptop250-2.jpg\" class=\"listingImg\">",
+            "target": [
+              "img[src$=\"laptop250-2.jpg\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/learnMoreButton.jpg\">",
+            "target": [
+              "a[href$=\"laptop2.php\"] > img"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/addToCartButton.gif\">",
+            "target": [
+              "tr:nth-child(4) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"] > img"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/laptop250-3.jpg\" class=\"listingImg\">",
+            "target": [
+              "img[src$=\"laptop250-3.jpg\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/learnMoreButton.jpg\">",
+            "target": [
+              "a[href$=\"laptop3.php\"] > img"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/addToCartButton.gif\">",
+            "target": [
+              "tr:nth-child(6) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"] > img"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/small60-2.jpg\" width=\"60\" height=\"60\">",
+            "target": [
+              "img[src$=\"small60-2.jpg\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"images/site/motherboard240.jpg\" width=\"240\" height=\"90\">",
+            "target": [
+              "img[src$=\"motherboard240.jpg\"]"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "td-headers-attr",
+        "impact": null,
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g",
+          "TTv5",
+          "TT14.b"
+        ],
+        "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
+        "help": "Table cells that use the headers attribute must only refer to cells in the same table",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/td-headers-attr?application=cypress",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "td-headers-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "The headers attribute is exclusively used to refer to other cells in the table"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<table class=\"listingsTable\">",
+            "target": [
+              "table"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "th-has-data-cells",
+        "impact": null,
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g",
+          "TTv5",
+          "14.b"
+        ],
+        "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
+        "help": "Table headers in a data table must refer to data cells",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/th-has-data-cells?application=cypress",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "th-has-data-cells",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "All table header cells refer to data cells"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<table class=\"listingsTable\">",
+            "target": [
+              "table"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "ACT",
+          "TTv5",
+          "TT13.c"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a href=\"laptop1.php\">Fregatte 17</a>",
+                    "target": [
+                      ".subnav > ul > li:nth-child(1) > a[href$=\"laptop1.php\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"laptop1.php\">Fregatte 17</a>",
+            "target": [
+              ".subnav > ul > li:nth-child(1) > a[href$=\"laptop1.php\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a href=\"laptop2.php\">Abgenutzt 15</a>",
+                    "target": [
+                      ".subnav > ul > li:nth-child(2) > a[href$=\"laptop2.php\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"laptop2.php\">Abgenutzt 15</a>",
+            "target": [
+              ".subnav > ul > li:nth-child(2) > a[href$=\"laptop2.php\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a href=\"laptop3.php\">Backstein 21</a>",
+                    "target": [
+                      ".subnav > ul > li:nth-child(3) > a[href$=\"laptop3.php\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"laptop3.php\">Backstein 21</a>",
+            "target": [
+              ".subnav > ul > li:nth-child(3) > a[href$=\"laptop3.php\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          }
+        ]
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "ACT",
+          "TTv5",
+          "TT13.c"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h1>Laptops &amp; Notebooks</h1>",
+            "target": [
+              "#content > h1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>",
+            "target": [
+              "#content > p"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Fregatte 17</strong>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > p:nth-child(1) > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>We had so many superlatives lined up to describe this classically-styled, ultra portable, budget-friendly, high performance machine that we couldn't contain ourselves. </p>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > p:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li>Genuine Windows 7 Home Premium 64-bit</li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li>3GB DDR3 System Memory </li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> 500GB 5400RPM Hard Drive</li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li>802.11b/g/n WLAN</li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li>Intel(R) Pentium(R) B950 Processor </li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> Up to 5.50 hours of battery life</li>",
+            "target": [
+              "tr:nth-child(1) > td:nth-child(2) > ul > li:nth-child(6)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Abgenutzt 15</strong>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > p:nth-child(1) > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>Power and portability all in one. The battery on this one almost lasts long enough for it to be useful as a laptop but believe us, you'll be tethered to a power cord like an astronaut on a space walk.</p>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > p:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> Genuine Windows 7 Home Premium 64-bit</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> Intel Core i3-370M + Intel(R) HD Graphics</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> 4GB DDR3 System Memory</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> 500GB 5400RPM Hard Drive</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> Webcam with Integrated Digital Microphone</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> 802.11b/g/n WLAN</li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(6)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> Up to 4.25 hours of battery life </li>",
+            "target": [
+              "tr:nth-child(3) > td:nth-child(2) > ul > li:nth-child(7)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Backstein 21</strong>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > p:nth-child(1) > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>Look at this little thing, ain't it cute?  All small and portable with its tiny screen you can barely read\n            and keyboard so small your fingers cramp when using it, you'll wonder why you didn't get a bigger computer.</p>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > p:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> Genuine Windows 7 Home Premium 64-bit</li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> 2nd generation Intel(R) Core(TM) i3-2330M </li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> 4GB DDR3 System Memory </li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> 640GB 5400RPM Hard Drive</li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> Webcam with Integrated Digital Microphone</li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> 802.11b/g/n WLAN</li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(6)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li> Up to 4.25 hours of battery life </li>",
+            "target": [
+              "tr:nth-child(5) > td:nth-child(2) > ul > li:nth-child(7)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"title\"><img src=\"images/site/small60-2.jpg\" width=\"60\" height=\"60\">Our Location. Let us show it to you</h2>",
+            "target": [
+              ".title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#777777",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 4.47,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body id=\"top\">",
+                    "target": [
+                      "#top"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>Our opulently appointed corporate offices are located in the finest strip mall within miles. We think you'll agree that our place is the place among places when you think of a place that does our sort of thing. </p>",
+            "target": [
+              ".holder > p:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT7.a",
+          "TT7.b"
+        ],
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/image-alt?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img class=\"imgr\" src=\"images/site/laptop125x125.jpg\" width=\"125\" height=\"125\">",
+            "target": [
+              ".imgr"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/laptop250-1.jpg\" class=\"listingImg\">",
+            "target": [
+              "img[src$=\"laptop250-1.jpg\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/learnMoreButton.jpg\">",
+            "target": [
+              "a[href$=\"laptop1.php\"] > img"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/addToCartButton.gif\">",
+            "target": [
+              "tr:nth-child(2) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"] > img"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/laptop250-2.jpg\" class=\"listingImg\">",
+            "target": [
+              "img[src$=\"laptop250-2.jpg\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/learnMoreButton.jpg\">",
+            "target": [
+              "a[href$=\"laptop2.php\"] > img"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/addToCartButton.gif\">",
+            "target": [
+              "tr:nth-child(4) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"] > img"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/laptop250-3.jpg\" class=\"listingImg\">",
+            "target": [
+              "img[src$=\"laptop250-3.jpg\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/learnMoreButton.jpg\">",
+            "target": [
+              "a[href$=\"laptop3.php\"] > img"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/addToCartButton.gif\">",
+            "target": [
+              "tr:nth-child(6) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"] > img"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/small60-2.jpg\" width=\"60\" height=\"60\">",
+            "target": [
+              "img[src$=\"small60-2.jpg\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img src=\"images/site/motherboard240.jpg\" width=\"240\" height=\"90\">",
+            "target": [
+              "img[src$=\"motherboard240.jpg\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ]
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.35,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#c80000",
+                  "parentColor": "#777777"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "#content > p"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.35:1 with the surrounding text. (Minimum contrast is 3:1, link text: #c80000, surrounding text: #777777)"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "#content > p"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"http://en.wikipedia.org/wiki/Laptop\">Wikipedia</a>",
+            "target": [
+              "#content > p > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.35:1 with the surrounding text. (Minimum contrast is 3:1, link text: #c80000, surrounding text: #777777)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          }
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "wcag244",
+          "section508",
+          "section508.22.a",
+          "ACT",
+          "TTv5",
+          "TT6.a"
+        ],
+        "description": "Ensures links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-name?application=cypress",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"laptop1.php\"><img src=\"images/site/learnMoreButton.jpg\"></a>",
+            "target": [
+              ".addToCart[colspan=\"2\"] > a[href$=\"laptop1.php\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"cart.php?added=1\"><img src=\"images/site/addToCartButton.gif\"></a>",
+            "target": [
+              "tr:nth-child(2) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"laptop2.php\"><img src=\"images/site/learnMoreButton.jpg\"></a>",
+            "target": [
+              ".addToCart[colspan=\"2\"] > a[href$=\"laptop2.php\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"cart.php?added=1\"><img src=\"images/site/addToCartButton.gif\"></a>",
+            "target": [
+              "tr:nth-child(4) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"laptop3.php\"><img src=\"images/site/learnMoreButton.jpg\"></a>",
+            "target": [
+              ".addToCart[colspan=\"2\"] > a[href$=\"laptop3.php\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"cart.php?added=1\"><img src=\"images/site/addToCartButton.gif\"></a>",
+            "target": [
+              "tr:nth-child(6) > .addToCart[colspan=\"2\"] > a[href=\"cart.php?added=1\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "computers",
+  "name": "@axe-devtools-cypress",
+  "platform": {},
+  "testSubject": {
+    "fileName": "http://abcdcomputech.dequecloud.com/laptopsandnotebooks.php"
+  },
+  "type": "axe-devtools-result"
+}
