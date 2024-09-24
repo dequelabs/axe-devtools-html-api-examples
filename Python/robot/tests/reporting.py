@@ -29,14 +29,14 @@ class reporting:
         elif platform == "win32":
             reporter = root_path + "/resources/reporter-cli-win.exe"
         results_path = root_path + "/a11y-results"
-        jsonpath = root_path + "/axe-reports"
-        if not (os.path.isdir(jsonpath)):
-            os.mkdir(jsonpath)
-        command_html = str(reporter) + " " + jsonpath + " " + \
+        json_path = root_path + "/axe-reports"
+        if not (os.path.isdir(json_path)):
+            os.mkdir(json_path)
+        command_html = str(reporter) + " " + json_path + " " + \
             results_path+" --format html"
-        command_csv = str(reporter) + " " + jsonpath + \
+        command_csv = str(reporter) + " " + json_path + \
             " " + results_path + " --format csv"
-        command_xml = str(reporter) + " " + jsonpath + \
+        command_xml = str(reporter) + " " + json_path + \
             " " + results_path + " --format xml"
         try:
             os.system(command_html)
