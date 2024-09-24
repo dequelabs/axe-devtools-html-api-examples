@@ -10,4 +10,3 @@ Axe Analyze
     Open Homepage and analyze for a11y issues
     Open the recipe card on the homepage and check for a11y issues
     [Teardown]    Close Browser
-

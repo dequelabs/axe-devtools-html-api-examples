@@ -2,38 +2,42 @@ import os
 import shutil
 from sys import platform
 
+
 class reporting:
 
     def __init__(self):
-        self.create_reports()
-
+        # Does not require any initialization
+        pass
 
     def get_relative_path(self):
         absolute_path_to_proj = os.getcwd()
         path = absolute_path_to_proj.split(" ")
-        pathlist = path[0].split("/")
-        requiredpath = ""
-        for string in pathlist:
-            requiredpath = requiredpath+"/"+string
+        path_list = path[0].split("/")
+        required_path = ""
+        for string in path_list:
+            required_path = required_path + "/" + string
             if string == 'robot':
                 break
-        return requiredpath
+        return required_path
 
     def create_reports(self):
-        rootpath=self.get_relative_path()
+        root_path = self.get_relative_path()
         if platform == "linux" or platform == "linux2":
-            reporter = rootpath+"/resources/reporter-cli-linux"
+            reporter = root_path+"/resources/reporter-cli-linux"
         elif platform == "darwin":
-            reporter = rootpath+"/resources/reporter-cli-macos"
+            reporter = root_path + "/resources/reporter-cli-macos"
         elif platform == "win32":
-            reporter = rootpath+"/resources/reporter-cli-win.exe"
-        resultspath = rootpath+"/a11y-results"
-        jsonpath = rootpath + "/axe-reports"
-        if not (os.path.isdir(jsonpath)):
-            os.mkdir(jsonpath)
-        command_html = str(reporter) +" "+jsonpath+" "+resultspath+" --format html"
-        command_csv = str(reporter) +" "+jsonpath+" "+resultspath+" --format csv"
-        command_xml = str(reporter) +" "+jsonpath+" "+resultspath+" --format xml"
+            reporter = root_path + "/resources/reporter-cli-win.exe"
+        results_path = root_path + "/a11y-results"
+        json_path = root_path + "/axe-reports"
+        if not (os.path.isdir(json_path)):
+            os.mkdir(json_path)
+        command_html = str(reporter) + " " + json_path + " " + \
+            results_path+" --format html"
+        command_csv = str(reporter) + " " + json_path + \
+            " " + results_path + " --format csv"
+        command_xml = str(reporter) + " " + json_path + \
+            " " + results_path + " --format xml"
         try:
             os.system(command_html)
             os.system(command_csv)
@@ -42,10 +46,7 @@ class reporting:
             return ("reporter binary is not present")
 
     def clear_reports(self):
-        rootpath=self.get_relative_path()
-        if not (os.path.isdir(rootpath+"/axe-reports/")):
-            os.mkdir(rootpath+"/axe-reports/")
-        shutil.rmtree(rootpath+"/axe-reports/")
-
-if __name__ == "__main__":
-    reporting()
+        root_path = self.get_relative_path()
+        if not (os.path.isdir(root_path + "/axe-reports/")):
+            os.mkdir(root_path + "/axe-reports/")
+        shutil.rmtree(root_path + "/axe-reports/")
