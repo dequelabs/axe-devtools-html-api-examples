@@ -55,7 +55,7 @@ Update the line 16 as follows:
 
 Install the dependencies including **axe DevTools Selenium** and **DevTools Cucumber** for the project.
 
-> **_NOTE:_**
+> [!NOTE]
 >You need a valid license to use our APIs. For more information, see [NPM registry setup](https://dequeuniversity.com/guide/attest/2.11/getting-started/npm-setup/) page. After configuring the access to Deque's private registry, you can install the dependencies for this project.
 
 ### Set up Bundle Configuration
@@ -81,7 +81,7 @@ Follow these steps to create bundle config file:
     c. Run the following command to cgi email id.
 
     ```sh
-    CGI.escape <"email-id">
+    CGI.escape "email-id"
     ```
 
     It returns cgi escaped email.
@@ -89,7 +89,7 @@ Follow these steps to create bundle config file:
     d. Run the following command to cgi api key.
 
     ```sh
-    CGI.escape <"api-key">
+    CGI.escape "api-key"
     ```
 
     It returns cgi escaped api key.
@@ -100,7 +100,7 @@ Follow these steps to create bundle config file:
 bundle config agora.dequecloud.com <username>:<api-key> 
 ```
 
-It creates the config file with your credentialss.
+It creates the config file with your credentials.
 
 The following command installs all the required dependencies to run this example project.
 
