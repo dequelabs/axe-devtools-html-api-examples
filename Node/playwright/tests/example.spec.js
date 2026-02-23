@@ -6,7 +6,7 @@ const reporter = new AxeDevtoolsReporter(
   './a11y-results/homepageFlows'
 )
 
-test.afterAll(async ({ context }) => {
+test.afterAll(async ({ browser }) => {
   await reporter.buildHTML('./a11y-results/html/')
   await reporter.buildJUnitXML('./a11y-results/xml/')
   await reporter.buildCSV('./a11y-results/csv/')
